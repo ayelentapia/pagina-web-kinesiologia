@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Kinesiología</title>
+    
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <header id="header">
+
+    <div class="header-container">
+
+        <a href="#hero" class="marca-header">
+            <span class="marca-nombre">Ayelen Tapia</span>
+            <span class="marca-profesion">Kinesiología</span>
+        </a>
+
+
+        <button
+            class="menu-toggle"
+            id="menu-toggle"
+            aria-label="Abrir menú"
+            aria-expanded="false">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+    </div>
+
+
+    <div class="menu-overlay" id="menu-overlay"></div>
+
+
+    <nav class="menu-navegacion" id="menu-navegacion">
+
+
+        <div class="menu-links">
+
+    <a href="#hero">Inicio</a>
+
+    <a href="#quien-soy">Quién soy</a>
+
+    <a href="#mis-servicios">Servicios</a>
+
+    <a href="#como-trabajamos">Cómo trabajamos</a>
+
+    <a href="#mi-enfoque">Mi enfoque</a>
+
+    <a href="#contacto">Contacto</a>
+
+    <a href="#redes">Redes sociales</a>
+
+</div>
+
+
+        <div class="menu-inferior">
+
+            <p>¿Querés hacer una consulta?</p>
+
+            <a
+                href="https://wa.me/5492236104420?text=Hola%20Sabrina,%20quisiera%20solicitar%20un%20turno%20de%20kinesiolog%C3%ADa."
+                target="_blank"
+                class="menu-turno">
+
+                Solicitar turno
+
+                <i class="fa-brands fa-whatsapp"></i>
+
+            </a>
+
+            <span>Mar del Plata · Argentina</span>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+    <section id="hero">
+
+    <div class="hero-contenido">
+
+        <p class="hero-etiqueta">KINESIOLOGÍA Y REHABILITACIÓN</p>
+
+        <h1>
+            Recuperá movimiento.<br>
+            Volvé a confiar en tu cuerpo.
+        </h1>
+
+        <p class="hero-texto">
+            Evaluación, rehabilitación y ejercicio terapéutico
+            adaptados a tus necesidades y objetivos.
+        </p>
+
+        <div class="hero-botones">
+
+            <a href="https://wa.me/5492236104420?text=Hola%20Sabrina,%20quisiera%20solicitar%20un%20turno%20de%20kinesiolog%C3%ADa."
+               target="_blank">
+                <button>Solicitar turno</button>
+            </a>
+
+            <a href="#mis-servicios" class="boton-secundario">
+                Ver servicios
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+    <section id="quien-soy" class="reveal">
+
+    <div class="container">
+
+        <div class="foto-perfil">
+            <img src="media/fotoyo.jpeg" alt="Licenciada en Kinesiología">
+        </div>
+
+        <div class="texto-quien-soy">
+
+            <h2>Quién <span class="color-acent">Soy</span></h2>
+
+            <p>
+                Soy Licenciada en Kinesiología y Fisioterapia, enfocada en
+                rehabilitación, movimiento y educación en salud basada en evidencia.
+            </p>
+
+            <p>
+                Mi objetivo es acompañarte durante tu recuperación y ayudarte
+                a comprender tu cuerpo para volver a moverte con confianza.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+    <section id="mis-servicios" class="reveal">
+
+        <div class="container">
+
+            <h2>Mis Servicios</h2>
+
+            <div class="servicios">
+
+                <div class="carta">
+
+    <h3>Rehabilitación Funcional</h3>
+
+    <p>
+        Recuperá movilidad, fuerza y confianza después de una lesión,
+        cirugía o proceso de dolor, con un plan de ejercicios adaptado a vos.
+    </p>
+
+    <button onclick="mostrarInfo('info-rehabilitacion')">+ Info</button>
+
+
+</div>
+
+
+<div class="carta">
+    <h3>Drenaje Linfático Manual</h3>
+    <p>
+        Técnica manual suave y rítmica que favorece el movimiento de la linfa
+        y acompaña el tratamiento de edemas y alteraciones linfáticas.
+    </p>
+    
+   
+     <button onclick="mostrarInfo('info-drenaje')">+ Info</button>
+
+</div>
+
+
+<div class="carta">
+    <h3>Rehabilitación Maxilofacial</h3>
+    <p>
+        Abordaje especializado de mandíbula, rostro y cuello para recuperar
+        movimiento y función después de lesiones, cirugías o alteraciones.
+    </p>
+
+    <button onclick="mostrarInfo('info-maxilofacial')">+ Info</button>
+
+</div>
+
+
+<div class="carta">
+    <h3>ATM, Mandíbula y Bruxismo</h3>
+    <p>
+        Abordaje de alteraciones de la mandíbula y la articulación
+        temporomandibular, incluyendo dolor, limitación del movimiento
+        y síntomas asociados al bruxismo.
+    </p>
+
+    <button onclick="mostrarInfo('info-atm')">+ Info</button>
+
+</div>
+
+
+<div class="carta">
+    <h3>Acupuntura en Kinesiología</h3>
+    <p>
+        Técnica complementaria que utiliza agujas muy finas para abordar
+        el dolor y acompañar el tratamiento de distintas condiciones.
+    </p>
+
+    <button onclick="mostrarInfo('info-acupuntura')">+ Info</button>
+
+</div>
+
+
+<div class="carta">
+    <h3>Terapia Manual</h3>
+    <p>
+        Técnicas manuales aplicadas a músculos y articulaciones para
+        acompañar el manejo del dolor y recuperar movimiento y función.
+    </p>
+
+    <button onclick="mostrarInfo('info-terapia-manual')">+ Info</button>
+
+</div>
+
+
+<div class="carta">
+    <h3>Punción Seca</h3>
+    <p>
+        Técnica con agujas finas que puede utilizarse como complemento
+        para abordar zonas musculares sensibles y mejorar su función.
+    </p>
+
+    <button onclick="mostrarInfo('info-puncion-seca')">+ Info</button>
+
+</div>
+
+
+<div class="carta">
+    <h3>Entrenamiento Adaptado</h3>
+    <p>
+        Programas de ejercicio personalizados y progresivos para recuperar
+        fuerza, capacidad física y confianza en el movimiento.
+    </p>
+  
+    <button onclick="mostrarInfo('info-entrenamiento')">+ Info</button>
+
+</div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+<section id="info-rehabilitacion" class="info-detallada">
+
+    <div class="container">
+
+        <div class="info-grid">
+
+            <div class="info-imagen">
+                <img src="media/rehabilitacion-funcional.jpg" alt="Rehabilitación Funcional">
+            </div>
+
+            <div class="info-contenido">
+
+                <h2>Rehabilitación Funcional</h2>
+
+                <h3>¿Para quién está indicado?</h3>
+
+                <p>
+                    Para personas que necesitan recuperar movimiento, fuerza y función
+                    después de una lesión, cirugía, período de inmovilización o proceso de dolor.
+                </p>
+
+                <h3>¿En qué situaciones puede ayudarte?</h3>
+
+                <p>
+                    Puede formar parte del tratamiento de lesiones musculares y articulares,
+                    recuperación postquirúrgica, pérdida de fuerza o movilidad y dificultades
+                    para volver a las actividades cotidianas o deportivas.
+                </p>
+
+                <h3>¿Cómo trabajamos?</h3>
+
+                <p>
+                    Comenzamos con una evaluación para conocer tu estado actual,
+                    tus limitaciones y tus objetivos. A partir de eso, diseñamos un
+                    plan de tratamiento progresivo que puede combinar ejercicio terapéutico,
+                    educación, terapia manual y otras herramientas según tus necesidades.
+                </p>
+
+                <h3>¿Qué objetivos buscamos?</h3>
+
+                <p>
+                    Recuperar progresivamente la movilidad, fuerza y capacidad funcional,
+                    favoreciendo que puedas volver a tus actividades con mayor confianza
+                    y autonomía.
+                </p>
+
+                <div class="info-botones">
+
+                    <button onclick="cerrarInfo()">Cerrar</button>
+
+                    <a href="https://wa.me/5492236104420?text=Hola%20Sabrina,%20quisiera%20solicitar%20un%20turno%20de%20kinesiolog%C3%ADa." target="_blank">
+                        <button>Reservá tu turno</button>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="info-drenaje" class="info-detallada">
+
+    <div class="container">
+
+        <div class="info-grid">
+
+            <div class="info-imagen">
+                <img src="media/drenaje-linfatico.jpg" alt="Drenaje Linfático Manual">
+            </div>
+
+            <div class="info-contenido">
+
+                <h2>Drenaje Linfático Manual</h2>
+
+                <h3>¿Para quién está indicado?</h3>
+
+                <p>
+                    Para personas que presentan edema o necesitan acompañar
+                    determinados procesos postquirúrgicos o alteraciones del
+                    sistema linfático, siempre luego de valorar si la técnica está indicada.
+                </p>
+
+                <h3>¿En qué situaciones puede ayudarte?</h3>
+
+                <p>
+                    Puede utilizarse como parte del abordaje de determinados edemas,
+                    procesos de recuperación después de algunas cirugías y alteraciones
+                    relacionadas con el drenaje linfático.
+                </p>
+
+                <h3>¿Cómo trabajamos?</h3>
+
+                <p>
+                    Realizamos maniobras manuales suaves, lentas y rítmicas,
+                    adaptadas a cada persona y al motivo de consulta.
+                    La técnica se integra dentro de un abordaje individualizado.
+                </p>
+
+                <h3>¿Qué objetivos buscamos?</h3>
+
+                <p>
+                    Favorecer el desplazamiento de líquidos y acompañar la disminución
+                    del edema cuando el drenaje linfático manual está indicado.
+                </p>
+
+                <div class="info-botones">
+
+                    <button onclick="cerrarInfo()">Cerrar</button>
+
+                    <a href="https://wa.me/5492236104420?text=Hola%20Sabrina,%20quisiera%20solicitar%20un%20turno%20de%20kinesiolog%C3%ADa." target="_blank">
+                        <button>Reservá tu turno</button>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="info-maxilofacial" class="info-detallada">
+
+    <div class="container">
+
+        <div class="info-grid">
+
+            <div class="info-imagen">
+                <img src="media/rehabilitacion-maxilofascial.jpg" alt="Rehabilitación Maxilofacial">
+            </div>
+
+            <div class="info-contenido">
+
+                <h2>Rehabilitación Maxilofacial</h2>
+
+                <h3>¿Para quién está indicado?</h3>
+
+                <p>
+                    Para personas que necesitan recuperar el movimiento y la función
+                    de la mandíbula, rostro y cuello después de una lesión, cirugía
+                    o proceso que haya generado dolor, rigidez o limitación del movimiento.
+                </p>
+
+                <h3>¿En qué situaciones puede ayudarte?</h3>
+
+                <p>
+                    Puede formar parte del tratamiento después de determinadas cirugías
+                    maxilofaciales, traumatismos, alteraciones de la movilidad mandibular
+                    y otros procesos que afecten la función de la región facial y cervical.
+                </p>
+
+                <h3>¿Cómo trabajamos?</h3>
+
+                <p>
+                    Comenzamos con una evaluación de la movilidad, el dolor y la función
+                    de la zona. El tratamiento puede combinar técnicas manuales, ejercicios
+                    específicos y educación, adaptando cada etapa a las necesidades de la persona.
+                </p>
+
+                <h3>¿Qué objetivos buscamos?</h3>
+
+                <p>
+                    Favorecer la recuperación del movimiento, disminuir las limitaciones
+                    funcionales y acompañar el retorno progresivo a las actividades cotidianas.
+                </p>
+
+                <div class="info-botones">
+
+                    <button onclick="cerrarInfo()">Cerrar</button>
+
+                    <a href="https://wa.me/5492236104420?text=Hola%20Sabrina,%20quisiera%20solicitar%20un%20turno%20de%20kinesiolog%C3%ADa." target="_blank">
+                        <button>Reservá tu turno</button>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="info-atm" class="info-detallada">
+
+    <div class="container">
+
+        <div class="info-grid">
+
+            <div class="info-imagen">
+                <img src="media/atm-bruxismo.jpg" alt="ATM, Mandíbula y Bruxismo">
+            </div>
+
+            <div class="info-contenido">
+
+                <h2>ATM, Mandíbula y Bruxismo</h2>
+
+                <h3>¿Para quién está indicado?</h3>
+
+                <p>
+                    Para personas que presentan dolor o molestias en la mandíbula,
+                    articulación temporomandibular, cara o cuello, así como dificultades
+                    para abrir la boca, masticar o realizar determinados movimientos.
+                </p>
+
+                <h3>¿En qué situaciones puede ayudarte?</h3>
+
+                <p>
+                    Puede formar parte del abordaje de dolor temporomandibular,
+                    limitaciones del movimiento mandibular, sobrecarga muscular,
+                    molestias asociadas al bruxismo y alteraciones funcionales
+                    relacionadas con la mandíbula y la región cervical.
+                </p>
+
+                <h3>¿Cómo trabajamos?</h3>
+
+                <p>
+                    Comenzamos con una evaluación de la movilidad mandibular,
+                    musculatura, articulación y región cervical. Según cada caso,
+                    podemos combinar terapia manual, ejercicios específicos,
+                    educación y estrategias para mejorar el control y la función.
+                </p>
+
+                <h3>¿Qué objetivos buscamos?</h3>
+
+                <p>
+                    Disminuir las molestias, mejorar la movilidad y función de la
+                    mandíbula y favorecer un mejor control de la región mandibular,
+                    cervical y facial.
+                </p>
+
+                <div class="info-botones">
+
+                    <button onclick="cerrarInfo()">Cerrar</button>
+
+                    <a href="https://wa.me/5492236104420?text=Hola%20Sabrina,%20quisiera%20solicitar%20un%20turno%20de%20kinesiolog%C3%ADa." target="_blank">
+                        <button>Reservá tu turno</button>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="info-acupuntura" class="info-detallada">
+
+    <div class="container">
+
+        <div class="info-grid">
+
+            <div class="info-imagen">
+                <img src="media/acupuntura.jpg" alt="Acupuntura en Kinesiología">
+            </div>
+
+            <div class="info-contenido">
+
+                <h2>Acupuntura en Kinesiología</h2>
+
+                <h3>¿Para quién está indicado?</h3>
+
+                <p>
+                    Para personas que presentan dolor, tensión muscular o determinadas
+                    alteraciones funcionales en las que la acupuntura pueda utilizarse
+                    como herramienta complementaria dentro del tratamiento kinésico.
+                </p>
+
+                <h3>¿En qué situaciones puede ayudarte?</h3>
+
+                <p>
+                    Puede utilizarse como complemento en el abordaje de distintos tipos
+                    de dolor y molestias musculoesqueléticas, ayudando a modular los
+                    síntomas y acompañando el proceso de recuperación.
+                </p>
+
+                <h3>¿Cómo trabajamos?</h3>
+
+                <p>
+                    Primero realizamos una evaluación para conocer el motivo de consulta
+                    y determinar si la técnica está indicada. Luego se colocan agujas
+                    muy finas en puntos seleccionados según cada caso. La acupuntura
+                    puede combinarse con otras herramientas de kinesiología durante el tratamiento.
+                </p>
+
+                <h3>¿Qué objetivos buscamos?</h3>
+
+                <p>
+                    Buscamos contribuir al manejo del dolor y la tensión muscular,
+                    favorecer el movimiento y acompañar el proceso de recuperación
+                    dentro de un abordaje integral.
+                </p>
+
+                <div class="info-botones">
+
+                    <button onclick="cerrarInfo()">Cerrar</button>
+
+                    <a href="https://wa.me/5492236104420?text=Hola%20Sabrina,%20quisiera%20solicitar%20un%20turno%20de%20kinesiolog%C3%ADa." target="_blank">
+                        <button>Reservá tu turno</button>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="info-terapia-manual" class="info-detallada">
+
+    <div class="container">
+
+        <div class="info-grid">
+
+            <div class="info-imagen">
+                <img src="media/terapia-manual.jpg" alt="Terapia Manual">
+            </div>
+
+            <div class="info-contenido">
+
+                <h2>Terapia Manual</h2>
+
+                <h3>¿Para quién está indicado?</h3>
+
+                <p>
+                    Para personas que presentan dolor, rigidez o limitaciones
+                    de movimiento en músculos y articulaciones y que pueden
+                    beneficiarse de técnicas manuales dentro de un tratamiento kinésico.
+                </p>
+
+                <h3>¿En qué situaciones puede ayudarte?</h3>
+
+                <p>
+                    Puede utilizarse como complemento en diferentes afecciones
+                    musculoesqueléticas, molestias articulares, tensión muscular
+                    y limitaciones de movilidad.
+                </p>
+
+                <h3>¿Cómo trabajamos?</h3>
+
+                <p>
+                    Primero realizamos una evaluación para identificar las zonas
+                    que pueden estar relacionadas con tus síntomas. Luego seleccionamos
+                    las técnicas manuales más adecuadas y las integramos con ejercicios,
+                    educación y otras herramientas según tus necesidades.
+                </p>
+
+                <h3>¿Qué objetivos buscamos?</h3>
+
+                <p>
+                    Buscamos favorecer el movimiento, disminuir las molestias y
+                    facilitar la recuperación de la función para que puedas volver
+                    progresivamente a tus actividades.
+                </p>
+
+                <div class="info-botones">
+
+                    <button onclick="cerrarInfo()">Cerrar</button>
+
+                    <a href="https://wa.me/5492236104420?text=Hola%20Sabrina,%20quisiera%20solicitar%20un%20turno%20de%20kinesiolog%C3%ADa." target="_blank">
+                        <button>Reservá tu turno</button>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="info-puncion-seca" class="info-detallada">
+
+    <div class="container">
+
+        <div class="info-grid">
+
+            <div class="info-imagen">
+                <img src="media/Puncion-Seca.jpg" alt="Punción Seca">
+            </div>
+
+            <div class="info-contenido">
+
+                <h2>Punción Seca</h2>
+
+                <h3>¿Para quién está indicado?</h3>
+
+                <p>
+                    Para personas que presentan dolor o sensibilidad muscular,
+                    especialmente cuando existen zonas de tensión o puntos sensibles
+                    que pueden ser abordados mediante esta técnica.
+                </p>
+
+                <h3>¿En qué situaciones puede ayudarte?</h3>
+
+                <p>
+                    Puede utilizarse como complemento del tratamiento kinésico en
+                    determinadas afecciones musculoesqueléticas, incluyendo algunas
+                    tendinopatías y cuadros de dolor muscular.
+                </p>
+
+                <h3>¿Cómo trabajamos?</h3>
+
+                <p>
+                    Primero evaluamos la zona y determinamos si la técnica está indicada.
+                    Luego se utilizan agujas muy finas sobre tejidos musculares
+                    seleccionados. La punción seca se integra con ejercicios,
+                    terapia manual y otras herramientas según cada caso.
+                </p>
+
+                <h3>¿Qué objetivos buscamos?</h3>
+
+                <p>
+                    Buscamos contribuir a la disminución del dolor y mejorar la
+                    función de la zona tratada, facilitando la progresión del
+                    tratamiento y la recuperación del movimiento.
+                </p>
+
+                <div class="info-botones">
+
+                    <button onclick="cerrarInfo()">Cerrar</button>
+
+                    <a href="https://wa.me/5492236104420?text=Hola%20Sabrina,%20quisiera%20solicitar%20un%20turno%20de%20kinesiolog%C3%ADa." target="_blank">
+                        <button>Reservá tu turno</button>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="info-entrenamiento" class="info-detallada">
+
+    <div class="container">
+
+        <div class="info-grid">
+
+            <div class="info-imagen">
+                <img src="media/planes-de-entrenamiento.jpg" alt="Entrenamiento Adaptado">
+            </div>
+
+            <div class="info-contenido">
+
+                <h2>Entrenamiento Adaptado</h2>
+
+                <h3>¿Para quién está indicado?</h3>
+
+                <p>
+                    Para personas que quieren mejorar su fuerza, movilidad y capacidad
+                    física mediante un programa de ejercicio adaptado a su estado actual,
+                    objetivos y necesidades.
+                </p>
+
+                <h3>¿En qué situaciones puede ayudarte?</h3>
+
+                <p>
+                    Puede ser útil durante procesos de recuperación, después de una lesión
+                    o período de inactividad, y también para personas que buscan mejorar
+                    progresivamente su condición física y desenvolverse con mayor seguridad
+                    en sus actividades.
+                </p>
+
+                <h3>¿Cómo trabajamos?</h3>
+
+                <p>
+                    Comenzamos con una evaluación para conocer tu capacidad física,
+                    antecedentes, limitaciones y objetivos. A partir de esa información,
+                    diseñamos un programa progresivo de ejercicios y ajustamos la carga
+                    según tu evolución.
+                </p>
+
+                <h3>¿Qué objetivos buscamos?</h3>
+
+                <p>
+                    Desarrollar progresivamente fuerza, movilidad, resistencia y capacidad
+                    funcional, buscando que puedas moverte y realizar tus actividades
+                    con mayor confianza y autonomía.
+                </p>
+
+                <div class="info-botones">
+
+                    <button onclick="cerrarInfo()">Cerrar</button>
+
+                    <a href="https://wa.me/5492236104420?text=Hola%20Sabrina,%20quisiera%20solicitar%20un%20turno%20de%20kinesiolog%C3%ADa." target="_blank">
+                        <button>Reservá tu turno</button>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="como-trabajamos" class="reveal">
+
+    <div class="container">
+
+        <div class="como-titulo">
+            <p class="seccion-etiqueta">TU PROCESO DE RECUPERACIÓN</p>
+
+            <h2>¿Cómo trabajamos?</h2>
+
+            <p>
+                Cada tratamiento comienza entendiendo tu situación,
+                tus necesidades y los objetivos que querés alcanzar.
+            </p>
+        </div>
+
+
+        <div class="pasos-tratamiento">
+
+            <div class="paso reveal-delay delay-1">
+
+                <div class="paso-numero">01</div>
+
+                <i class="fa-solid fa-clipboard-check"></i>
+
+                <h3>Evaluación inicial</h3>
+
+                <p>
+                    Evaluamos tu motivo de consulta, antecedentes,
+                    movimiento, síntomas y objetivos.
+                </p>
+
+            </div>
+
+
+            <div class="paso reveal-delay delay-2">
+
+                <div class="paso-numero">02</div>
+
+                <i class="fa-solid fa-list-check"></i>
+
+                <h3>Plan personalizado</h3>
+
+                <p>
+                    Diseñamos un abordaje adaptado a tu situación,
+                    capacidades y necesidades.
+                </p>
+
+            </div>
+
+
+            <div class="paso reveal-delay delay-3">
+
+                <div class="paso-numero">03</div>
+
+                <i class="fa-solid fa-person-walking"></i>
+
+                <h3>Tratamiento</h3>
+
+                <p>
+                    Trabajamos con ejercicio terapéutico y las herramientas
+                    necesarias según cada caso.
+                </p>
+
+            </div>
+
+
+            <div class="paso reveal-delay delay-4">
+
+                <div class="paso-numero">04</div>
+
+                <i class="fa-solid fa-arrow-trend-up"></i>
+
+                <h3>Progresión</h3>
+
+                <p>
+                    Evaluamos tu evolución y ajustamos el tratamiento
+                    a medida que recuperás capacidad y confianza.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="mi-enfoque" class="reveal">
+
+    <div class="container">
+
+        <div class="enfoque-texto">
+
+            <p class="seccion-etiqueta">MI FORMA DE TRABAJAR</p>
+
+            <h2>
+                Una kinesiología centrada en vos,
+                tu movimiento y tus objetivos.
+            </h2>
+
+            <p class="enfoque-descripcion">
+                Cada persona atraviesa un proceso diferente.
+                Por eso el tratamiento comienza con una evaluación
+                y se adapta a tu situación, necesidades y evolución.
+            </p>
+
+        </div>
+
+
+        <div class="enfoque-pilares">
+
+            <div class="pilar">
+                <span>01</span>
+                <h3>Movimiento</h3>
+                <p>
+                    Recuperar movimiento y capacidad funcional
+                    forma parte central del proceso.
+                </p>
+            </div>
+
+
+            <div class="pilar">
+                <span>02</span>
+                <h3>Educación</h3>
+                <p>
+                    Comprender lo que sucede también ayuda a
+                    participar activamente en tu recuperación.
+                </p>
+            </div>
+
+
+            <div class="pilar">
+                <span>03</span>
+                <h3>Evidencia</h3>
+                <p>
+                    Las decisiones terapéuticas se apoyan en
+                    evaluación clínica y conocimiento actualizado.
+                </p>
+            </div>
+
+
+            <div class="pilar">
+                <span>04</span>
+                <h3>Individualización</h3>
+                <p>
+                    El tratamiento se adapta a tus capacidades,
+                    objetivos y evolución.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+       <section id="contacto" class="reveal">
+
+    <div class="container">
+
+        <div class="contacto-info">
+
+            <p class="seccion-etiqueta">CONTACTO</p>
+
+            <h2>¿Querés hacer una consulta?</h2>
+
+            <p class="contacto-intro">
+                Podés escribirme para consultar por turnos,
+                tratamientos o cualquier duda antes de comenzar.
+            </p>
+
+            <div class="contacto-datos">
+
+                <a href="https://wa.me/5492236104420" target="_blank" class="contacto-item">
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                    <div>
+                        <span>WhatsApp</span>
+                        <p>+54 9 223 610 4420</p>
+                    </div>
+                </a>
+
+
+                <a href="mailto:ayekinesio@gmail.com" class="contacto-item">
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <div>
+                        <span>Email</span>
+                        <p>ayekinesio@gmail.com</p>
+                    </div>
+                </a>
+
+
+                <div class="contacto-item">
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <div>
+                        <span>Ubicación</span>
+                        <p>Mar del Plata, Argentina</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <a href="https://wa.me/5492236104420?text=Hola%20Sabrina,%20quisiera%20hacer%20una%20consulta."
+               target="_blank"
+               class="contacto-boton">
+
+                Escribime por WhatsApp
+
+            </a>
+
+        </div>
+
+
+        <div class="contacto-media">
+
+            <img src="media/contacto.jpg"
+                 alt="Licenciada Ayelen Tapia">
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="redes" class="reveal">
+
+    <div class="container">
+
+        <div class="redes-texto">
+
+            <p class="seccion-etiqueta">REDES SOCIALES</p>
+
+            <h2>Seguime para aprender más sobre movimiento y rehabilitación.</h2>
+
+            <p>
+                Comparto contenido sobre kinesiología, ejercicio,
+                rehabilitación, dolor y educación en salud.
+            </p>
+
+        </div>
+
+
+        <div class="redes-opciones">
+
+            <a href="https://www.instagram.com/aye.kinesio/"
+               target="_blank"
+               class="red-social red-instagram">
+
+                <i class="fa-brands fa-instagram"></i>
+
+                <div>
+                    <span>Instagram</span>
+                    <h3>@aye.kinesio</h3>
+                    <p>Contenido, educación y consejos sobre movimiento y rehabilitación.</p>
+                </div>
+
+                <i class="fa-solid fa-arrow-up-right-from-square flecha-red"></i>
+
+            </a>
+
+
+            <a href="https://www.facebook.com/aye.kinesio"
+               target="_blank"
+               class="red-social">
+
+                <i class="fa-brands fa-facebook-f"></i>
+
+                <div>
+                    <span>Facebook</span>
+                    <h3>aye.kinesio</h3>
+                    <p>Información, novedades y contenido profesional.</p>
+                </div>
+
+                <i class="fa-solid fa-arrow-up-right-from-square flecha-red"></i>
+
+            </a>
+
+            <a href="https://www.tiktok.com/@ayelen.369?_r=1&_t=ZS-9A5Zup7qpYF"
+   target="_blank"
+   class="red-social">
+
+    <i class="fa-brands fa-tiktok"></i>
+
+    <div>
+        <span>TikTok</span>
+        <h3>@ayelen.369</h3>
+        <p>
+            Videos cortos sobre movimiento, rehabilitación
+            y educación en salud.
+        </p>
+    </div>
+
+    <i class="fa-solid fa-arrow-up-right-from-square flecha-red"></i>
+
+</a>
+
+
+<a href="https://youtube.com/@ayelentapia-369?si=MauJEAE1Puiae0im"
+   target="_blank"
+   class="red-social">
+
+    <i class="fa-brands fa-youtube"></i>
+
+    <div>
+        <span>YouTube</span>
+        <h3>@ayelentapia-369</h3>
+        <p>
+            Videos educativos sobre kinesiología,
+            ejercicio y rehabilitación.
+        </p>
+    </div>
+
+    <i class="fa-solid fa-arrow-up-right-from-square flecha-red"></i>
+
+</a>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <section id="solicitar-turno" class="reveal">
+
+    <div class="container">
+
+        <p class="seccion-etiqueta">EMPEZÁ TU PROCESO</p>
+
+        <h2>Tu recuperación comienza con una evaluación.</h2>
+
+        <p class="cta-texto">
+            Contame qué te está pasando y coordinamos una consulta
+            para conocer tu situación y definir el mejor abordaje.
+        </p>
+
+        <a href="https://wa.me/5492236104420?text=Hola%20Sabrina,%20quisiera%20solicitar%20un%20turno%20de%20kinesiolog%C3%ADa."
+           target="_blank"
+           class="cta-boton">
+
+            Solicitar turno por WhatsApp
+
+        </a>
+
+        <p class="cta-ayuda">
+            ¿Tenés dudas antes de reservar? Podés escribirme y consultarme.
+        </p>
+
+    </div>
+
+</section>
+
+
+    <footer>
+
+    <div class="container footer-contenido">
+
+        <div class="footer-marca">
+
+            <h3>Ayelen Tapia</h3>
+
+            <p>
+                Lic. en Kinesiología y Fisioterapia
+            </p>
+
+            <span>
+                Mar del Plata, Argentina
+            </span>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <h4>Navegación</h4>
+
+            <a href="#quien-soy">Quién soy</a>
+            <a href="#mis-servicios">Servicios</a>
+            <a href="#como-trabajamos">Cómo trabajamos</a>
+            <a href="#contacto">Contacto</a>
+
+        </div>
+
+
+        <div class="footer-redes">
+
+            <h4>Seguime</h4>
+
+            <div class="footer-iconos">
+
+                <a href="https://www.instagram.com/aye.kinesio/"
+                   target="_blank"
+                   aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="https://www.facebook.com/aye.kinesio"
+                   target="_blank"
+                   aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="https://www.tiktok.com/@ayelen.369?_r=1&_t=ZS-9A5Zup7qpYF"
+                   target="_blank"
+                   aria-label="TikTok">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+
+                <a href="https://youtube.com/@ayelentapia-369?si=MauJEAE1Puiae0im"
+                   target="_blank"
+                   aria-label="YouTube">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-inferior">
+
+        <p>
+            © 2026 Ayelen Tapia. Todos los derechos reservados.
+        </p>
+
+    </div>
+
+</footer>
+
+<script src="./script.js"></script>
+
+</body>
+
+</html>
