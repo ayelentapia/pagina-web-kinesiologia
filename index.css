@@ -624,6 +624,38 @@ body.menu-abierto {
     padding: 120px 40px;
 }
 
+@media (max-width: 600px) {
+
+    #quien-soy .container {
+        flex-direction: column;
+        gap: 30px;
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    .foto-perfil {
+        width: 230px;
+        height: 230px;
+        margin: 0 auto;
+    }
+
+    .texto-quien-soy {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .texto-quien-soy h2 {
+        font-size: 2.5em;
+        line-height: 1.1;
+        margin-bottom: 20px;
+    }
+
+    .texto-quien-soy p {
+        font-size: 1.05em;
+        line-height: 1.7;
+    }
+}
+
 
 /* FOTO CIRCULAR */
 
@@ -741,6 +773,20 @@ body.menu-abierto {
     gap: 18px;
     padding: 10px 20px 20px;
     perspective: 1200px;
+}
+
+@media (max-width: 992px) {
+    #mis-servicios .servicios {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    #mis-servicios .servicios {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        padding: 10px 16px 20px;
+    }
 }
 
 #mis-servicios .carta {
@@ -1299,6 +1345,38 @@ footer .container {
 #solicitar-turno button {
     font-size: 2em;
 }
+
+@media (max-width: 600px) {
+
+    #solicitar-turno {
+        padding: 65px 20px;
+    }
+
+    #solicitar-turno h2 {
+        font-size: 2.4em;
+        line-height: 1.08;
+        margin-bottom: 22px;
+    }
+
+    #solicitar-turno .cta-texto {
+        font-size: 1em;
+        line-height: 1.6;
+        margin-bottom: 28px;
+    }
+
+    #solicitar-turno .cta-boton {
+        width: 100%;
+        max-width: 330px;
+        padding: 15px 18px;
+        font-size: 1.05em;
+    }
+
+    #solicitar-turno .cta-ayuda {
+        font-size: 0.9em;
+        line-height: 1.5;
+    }
+}
+
 footer .container{
     justify-content: flex-end;
 }
@@ -2281,3 +2359,649 @@ a.contacto-item:hover p {
 .info-contenido h3 {
     color: #4F9DDE;
 }
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+
+    /* HEADER */
+    header {
+        width: 100%;
+        padding: 10px 16px;
+    }
+
+    header .container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+    }
+
+    /* HERO */
+    #hero {
+        min-height: 100svh;
+        padding: 120px 20px 60px;
+        background-position: center;
+        background-size: cover;
+    }
+
+    #hero h1 {
+        font-size: clamp(2.3rem, 10vw, 3.7rem);
+        line-height: 1.05;
+        text-align: center;
+        margin-bottom: 18px;
+    }
+
+    #hero p {
+        font-size: 1.1rem;
+        line-height: 1.5;
+        text-align: center;
+        max-width: 100%;
+        margin: 0 auto 24px;
+    }
+
+    #hero .botones-hero,
+    #hero .hero-botones,
+    #hero .botones {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 14px;
+    }
+
+    #hero .botones-hero a,
+    #hero .hero-botones a,
+    #hero .botones a,
+    #hero button {
+        width: 100%;
+        max-width: 320px;
+        text-align: center;
+    }
+
+    /* QUIÉN SOY */
+    #quien-soy .container,
+    #somos .container,
+    .quien-soy-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        padding: 50px 20px;
+    }
+
+    #quien-soy img,
+    #somos img,
+    .quien-soy-container img {
+        width: min(78vw, 320px);
+        margin: 0 auto;
+    }
+
+    #quien-soy .texto,
+    #somos .texto,
+    .quien-soy-texto {
+        width: 100%;
+        text-align: center;
+    }
+
+    #quien-soy h2,
+    #somos h2 {
+        font-size: clamp(2.2rem, 9vw, 3.2rem);
+        line-height: 1.1;
+        margin-bottom: 18px;
+    }
+
+    #quien-soy p,
+    #somos p {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    /* MIS SERVICIOS */
+    #mis-servicios,
+    #servicios {
+        padding: 50px 16px;
+    }
+
+    #mis-servicios h2,
+    #servicios h2 {
+        font-size: clamp(2.5rem, 11vw, 3.4rem);
+        line-height: 1.1;
+        text-align: center;
+        margin-bottom: 24px;
+    }
+
+    .programas,
+    .servicios-grid,
+    .contenedor-servicios {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .carta,
+    .servicio-card,
+    .tarjeta-servicio {
+        width: 100%;
+        min-height: auto;
+        padding: 24px 18px;
+        border-radius: 24px;
+    }
+
+    .carta h3,
+    .servicio-card h3,
+    .tarjeta-servicio h3 {
+        font-size: 2rem;
+        line-height: 1.1;
+        margin-bottom: 14px;
+        text-align: center;
+    }
+
+    .carta p,
+    .servicio-card p,
+    .tarjeta-servicio p {
+        font-size: 1rem;
+        line-height: 1.5;
+        text-align: center;
+    }
+
+    .carta button,
+    .servicio-card button,
+    .tarjeta-servicio button {
+        margin-top: 18px;
+    }
+
+    /* BLOQUES INTERNOS DE SERVICIO DETALLADO */
+    .info-detallada .container,
+    .detalle-servicio .container {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        padding: 30px 20px;
+    }
+
+    .info-detallada img,
+    .detalle-servicio img {
+        width: 100%;
+        border-radius: 18px;
+    }
+
+    .info-detallada h2,
+    .detalle-servicio h2 {
+        font-size: 2rem;
+        line-height: 1.15;
+    }
+
+    .info-detallada p,
+    .detalle-servicio p {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    /* CONTACTO */
+    #contacto .container,
+    .contacto-container {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        padding: 50px 20px;
+    }
+
+    #contacto img,
+    .contacto-container img {
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    #contacto h2,
+    .contacto-container h2 {
+        font-size: 2.4rem;
+        line-height: 1.15;
+        text-align: center;
+    }
+
+    /* CTA FINAL */
+    #final,
+    .cta-final,
+    .bloque-final {
+        padding: 60px 20px;
+    }
+
+    #final h2,
+    .cta-final h2,
+    .bloque-final h2 {
+        font-size: clamp(2.6rem, 12vw, 4.4rem);
+        line-height: 1.05;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    #final p,
+    .cta-final p,
+    .bloque-final p {
+        font-size: 1rem;
+        line-height: 1.6;
+        text-align: center;
+        max-width: 100%;
+        margin: 0 auto 22px;
+    }
+
+    #final a,
+    .cta-final a,
+    .bloque-final a,
+    #final button {
+        width: 100%;
+        max-width: 330px;
+        margin: 0 auto;
+        text-align: center;
+        display: block;
+    }
+
+    /* FOOTER */
+    footer {
+        padding: 30px 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .menu-navegacion {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 82%;
+        max-width: 320px;
+        height: 100dvh;
+
+        padding: 90px 20px 30px;
+
+        overflow-y: auto;
+        overflow-x: hidden;
+
+        transition: right 0.35s ease;
+
+        z-index: 1050;
+    }
+
+    .menu-navegacion.activo {
+        right: 0;
+    }
+
+    .menu-overlay {
+        position: fixed;
+        inset: 0;
+        width: 100%;
+        height: 100dvh;
+    }
+
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+}
+
+@media (max-width: 600px) {
+
+    header {
+        height: 64px;
+    }
+
+    .header-container {
+        width: 100%;
+        height: 100%;
+        padding: 0 18px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .marca-header {
+        flex-shrink: 1;
+        min-width: 0;
+    }
+
+    .marca-nombre {
+        font-size: 1em;
+        line-height: 1;
+    }
+
+    .marca-profesion {
+        font-size: 0.65em;
+        letter-spacing: 1.2px;
+        margin-top: 4px;
+    }
+
+    .menu-toggle {
+        width: 42px;
+        height: 42px;
+        flex-shrink: 0;
+    }
+
+    .menu-toggle span {
+        width: 25px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    #hero {
+        min-height: calc(100svh - 64px);
+        height: auto;
+
+        padding: 85px 18px 55px;
+
+        background-position: center center;
+    }
+
+    .hero-contenido {
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .hero-etiqueta {
+        font-size: 0.9em;
+        line-height: 1.4;
+        margin-bottom: 16px;
+    }
+
+    #hero h1 {
+        font-size: 2.5em;
+        line-height: 1.05;
+
+        max-width: 360px;
+        margin: 10px auto 20px;
+    }
+
+    .hero-texto {
+        font-size: 1.05em;
+        line-height: 1.55;
+
+        max-width: 340px;
+        margin: 0 auto 28px;
+    }
+
+    .hero-botones {
+        width: 100%;
+
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .hero-botones a,
+    .hero-botones button {
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+
+        font-size: 1em;
+    }
+
+    #hero button {
+        font-size: 1em;
+    }
+
+    .boton-secundario {
+        font-size: 1em;
+        padding: 12px 18px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    #contacto {
+        padding: 65px 18px;
+    }
+
+    #contacto .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 35px;
+        width: 100%;
+    }
+
+    .contacto-info {
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+        text-align: left;
+    }
+
+    .contacto-info h2 {
+        font-size: 2.35em;
+        line-height: 1.08;
+        margin: 10px 0 18px;
+    }
+
+    .contacto-intro {
+        font-size: 1em;
+        line-height: 1.6;
+        margin-bottom: 28px;
+    }
+
+    .contacto-datos {
+        width: 100%;
+        gap: 12px;
+        margin-bottom: 28px;
+    }
+
+    .contacto-item {
+        width: 100%;
+        gap: 14px;
+        padding: 14px;
+        border-radius: 14px;
+    }
+
+    .contacto-item i {
+        width: 44px;
+        height: 44px;
+        font-size: 1.15em;
+    }
+
+    .contacto-item span {
+        font-size: 0.9em;
+    }
+
+    .contacto-item p {
+        font-size: 0.95em;
+        line-height: 1.35;
+        overflow-wrap: anywhere;
+    }
+
+    .contacto-boton {
+        width: 100%;
+        max-width: 330px;
+        padding: 14px 18px;
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .contacto-media {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .contacto-media img {
+        width: 100%;
+        max-width: 360px;
+        height: 390px;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    #redes {
+        padding: 65px 18px;
+    }
+
+    #redes .container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        width: 100%;
+    }
+
+    .redes-texto {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .redes-texto h2 {
+        font-size: 2.35em;
+        line-height: 1.08;
+        margin: 10px 0 18px;
+    }
+
+    .redes-texto p {
+        font-size: 1em;
+        line-height: 1.6;
+    }
+
+    .redes-opciones {
+        width: 100%;
+        gap: 14px;
+    }
+
+    .red-social {
+        width: 100%;
+        grid-template-columns: 48px 1fr auto;
+        gap: 14px;
+        padding: 18px 16px;
+        border-radius: 16px;
+    }
+
+    .red-social > i:first-child {
+        width: 46px;
+        height: 46px;
+        font-size: 1.3em;
+    }
+
+    .red-social span {
+        font-size: 0.8em;
+    }
+
+    .red-social h3 {
+        font-size: 1.1em;
+        margin-bottom: 4px;
+    }
+
+    .red-social p {
+        font-size: 0.9em;
+        line-height: 1.4;
+    }
+
+    .flecha-red {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 600px) {
+
+    #como-trabajamos {
+        padding: 65px 18px;
+    }
+
+    .como-titulo {
+        margin-bottom: 40px;
+    }
+
+    .como-titulo h2 {
+        font-size: 2.35em;
+        line-height: 1.08;
+        margin-bottom: 16px;
+    }
+
+    .como-titulo > p:last-child {
+        font-size: 1em;
+        line-height: 1.6;
+    }
+
+    .pasos-tratamiento {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .paso {
+        padding: 28px 22px;
+        border-radius: 16px;
+    }
+
+    .paso-numero {
+        font-size: 2.4em;
+    }
+
+    .paso i {
+        font-size: 1.7em;
+        margin-bottom: 14px;
+    }
+
+    .paso h3 {
+        font-size: 1.3em;
+        margin-bottom: 10px;
+    }
+
+    .paso p {
+        font-size: 1em;
+        line-height: 1.55;
+    }
+}
+
+@media (max-width: 600px) {
+
+    #mi-enfoque {
+        padding: 65px 18px;
+    }
+
+    #mi-enfoque .container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .enfoque-texto h2 {
+        font-size: 2.35em;
+        line-height: 1.08;
+        margin: 10px 0 18px;
+    }
+
+    .enfoque-descripcion {
+        font-size: 1em;
+        line-height: 1.6;
+    }
+
+    .enfoque-pilares {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .pilar {
+        padding-top: 16px;
+    }
+
+    .pilar h3 {
+        font-size: 1.3em;
+    }
+
+    .pilar p {
+        font-size: 1em;
+        line-height: 1.55;
+    }
+}
+
