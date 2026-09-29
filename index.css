@@ -1322,23 +1322,11 @@ footer .container {
 
 }
 
-#quien-soy .container {
-    
-}
-
-#mis-servicios .programas{
-    display: flex;
-    justify-content: center;
-}
-
 #mis-servicios p{
     display: block;
     margin-bottom: 30px;
 }
 
-#caracteristicas ul{
-    margin-left: 100px;
-}
 #solicitar-turno h2 {
     font-size: 3.2em;
 }
