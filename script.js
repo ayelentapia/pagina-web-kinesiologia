@@ -90,7 +90,6 @@ document.addEventListener("keydown", function(event) {
 
 });
 
-
 // ANIMACIONES AL HACER SCROLL
 
 const elementosReveal = document.querySelectorAll(".reveal, .reveal-delay");
