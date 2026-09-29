@@ -91,20 +91,6 @@ document.addEventListener("keydown", function(event) {
 });
 
 
-// CERRAR MENU AL TOCAR UNA OPCION
-linksMenu.forEach(function(link) {
-
-    link.addEventListener("click", function() {
-
-        menuToggle.classList.remove("activo");
-        menuNavegacion.classList.remove("activo");
-
-        menuToggle.setAttribute("aria-expanded", "false");
-
-    });
-
-});
-
 // ANIMACIONES AL HACER SCROLL
 
 const elementosReveal = document.querySelectorAll(".reveal, .reveal-delay");
