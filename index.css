@@ -1188,7 +1188,6 @@ footer .container {
 
 
 /* CELULARES */
-
 @media (max-width: 719px) {
 
     .info-grid {
@@ -1204,9 +1203,6 @@ footer .container {
         font-size: 2.3em;
     }
 
-}
-@media (max-width: 719px) {
-
     #hero h1 {
         font-size: 2.4em;
     }
@@ -1220,7 +1216,6 @@ footer .container {
     }
 
 }
-
 /* COMO TRABAJAMOS */
 
 #como-trabajamos {
@@ -1919,14 +1914,6 @@ img {
         padding: 10px 16px;
     }
 
-    header .container {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 12px;
-    }
-
     /* HERO */
     #hero {
         min-height: 100svh;
@@ -2031,97 +2018,48 @@ img {
 }
 
     /* BLOQUES INTERNOS DE SERVICIO DETALLADO */
-    .info-detallada .container,
-    .detalle-servicio .container {
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-        padding: 30px 20px;
-    }
+    .info-detallada .container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 30px 20px;
+}
 
-    .info-detallada img,
-    .detalle-servicio img {
-        width: 100%;
-        border-radius: 18px;
-    }
+.info-detallada img {
+    width: 100%;
+    border-radius: 18px;
+}
 
-    .info-detallada h2,
-    .detalle-servicio h2 {
-        font-size: 2rem;
-        line-height: 1.15;
-    }
+.info-detallada h2 {
+    font-size: 2rem;
+    line-height: 1.15;
+}
 
-    .info-detallada p,
-    .detalle-servicio p {
-        font-size: 1rem;
-        line-height: 1.7;
-    }
+.info-detallada p {
+    font-size: 1rem;
+    line-height: 1.7;
+}
 
     /* CONTACTO */
-    #contacto .container,
-    .contacto-container {
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-        padding: 50px 20px;
-    }
+   #contacto .container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 50px 20px;
+}
 
-    #contacto img,
-    .contacto-container img {
-        width: 100%;
-        max-width: 360px;
-        margin: 0 auto;
-    }
+#contacto img {
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+}
 
-    #contacto h2,
-    .contacto-container h2 {
-        font-size: 2.4rem;
-        line-height: 1.15;
-        text-align: center;
-    }
+#contacto h2 {
+    font-size: 2.4rem;
+    line-height: 1.15;
+    text-align: center;
+}
 
-    /* CTA FINAL */
-    #final,
-    .cta-final,
-    .bloque-final {
-        padding: 60px 20px;
-    }
-
-    #final h2,
-    .cta-final h2,
-    .bloque-final h2 {
-        font-size: clamp(2.6rem, 12vw, 4.4rem);
-        line-height: 1.05;
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
-    #final p,
-    .cta-final p,
-    .bloque-final p {
-        font-size: 1rem;
-        line-height: 1.6;
-        text-align: center;
-        max-width: 100%;
-        margin: 0 auto 22px;
-    }
-
-    #final a,
-    .cta-final a,
-    .bloque-final a,
-    #final button {
-        width: 100%;
-        max-width: 330px;
-        margin: 0 auto;
-        text-align: center;
-        display: block;
-    }
-
-    /* FOOTER */
-    footer {
-        padding: 30px 20px;
-        text-align: center;
-    }
 }
 
 @media (max-width: 600px) {
@@ -2159,9 +2097,7 @@ img {
         width: 100%;
         overflow-x: hidden;
     }
-}
 
-@media (max-width: 600px) {
 
     header {
         height: 64px;
@@ -2202,9 +2138,7 @@ img {
     .menu-toggle span {
         width: 25px;
     }
-}
 
-@media (max-width: 600px) {
 
     #hero {
         min-height: calc(100svh - 64px);
@@ -2267,9 +2201,6 @@ img {
         font-size: 1em;
         padding: 12px 18px;
     }
-}
-
-@media (max-width: 600px) {
 
     #contacto {
         padding: 65px 18px;
@@ -2350,9 +2281,6 @@ img {
         object-fit: cover;
         border-radius: 20px;
     }
-}
-
-@media (max-width: 600px) {
 
     #redes {
         padding: 65px 18px;
@@ -2417,9 +2345,6 @@ img {
     .flecha-red {
         font-size: 1em;
     }
-}
-
-@media (max-width: 600px) {
 
     #como-trabajamos {
         padding: 65px 18px;
@@ -2468,9 +2393,6 @@ img {
         font-size: 1em;
         line-height: 1.55;
     }
-}
-
-@media (max-width: 600px) {
 
     #mi-enfoque {
         padding: 65px 18px;
