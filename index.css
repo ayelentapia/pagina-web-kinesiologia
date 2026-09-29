@@ -1965,96 +1965,70 @@ img {
         }
 
     /* QUIÉN SOY */
-    #quien-soy .container,
-    #somos .container,
-    .quien-soy-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 24px;
-        padding: 50px 20px;
-    }
+   #quien-soy .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 50px 20px;
+}
 
-    #quien-soy img,
-    #somos img,
-    .quien-soy-container img {
-        width: min(78vw, 320px);
-        margin: 0 auto;
-    }
+  #quien-soy img {
+    width: min(78vw, 320px);
+    margin: 0 auto;
+}
 
-    #quien-soy .texto,
-    #somos .texto,
-    .quien-soy-texto {
-        width: 100%;
-        text-align: center;
-    }
+.texto-quien-soy {
+    width: 100%;
+    text-align: center;
+}
 
-    #quien-soy h2,
-    #somos h2 {
-        font-size: clamp(2.2rem, 9vw, 3.2rem);
-        line-height: 1.1;
-        margin-bottom: 18px;
-    }
+    #quien-soy h2 {
+    font-size: clamp(2.2rem, 9vw, 3.2rem);
+    line-height: 1.1;
+    margin-bottom: 18px;
+}
 
-    #quien-soy p,
-    #somos p {
-        font-size: 1rem;
-        line-height: 1.7;
-    }
+#quien-soy p {
+    font-size: 1rem;
+    line-height: 1.7;
+}
 
-    /* MIS SERVICIOS */
-    #mis-servicios,
-    #servicios {
-        padding: 50px 16px;
-    }
+   /* MIS SERVICIOS */
+#mis-servicios {
+    padding: 50px 16px;
+}
 
-    #mis-servicios h2,
-    #servicios h2 {
-        font-size: clamp(2.5rem, 11vw, 3.4rem);
-        line-height: 1.1;
-        text-align: center;
-        margin-bottom: 24px;
-    }
+#mis-servicios h2 {
+    font-size: clamp(2.5rem, 11vw, 3.4rem);
+    line-height: 1.1;
+    text-align: center;
+    margin-bottom: 24px;
+}
 
-    .programas,
-    .servicios-grid,
-    .contenedor-servicios {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 18px;
-    }
+.carta {
+    width: 100%;
+    min-height: auto;
+    padding: 24px 18px;
+    border-radius: 24px;
+}
 
-    .carta,
-    .servicio-card,
-    .tarjeta-servicio {
-        width: 100%;
-        min-height: auto;
-        padding: 24px 18px;
-        border-radius: 24px;
-    }
+.carta h3 {
+    font-size: 2rem;
+    line-height: 1.1;
+    margin-bottom: 14px;
+    text-align: center;
+}
 
-    .carta h3,
-    .servicio-card h3,
-    .tarjeta-servicio h3 {
-        font-size: 2rem;
-        line-height: 1.1;
-        margin-bottom: 14px;
-        text-align: center;
-    }
+.carta p {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: center;
+}
 
-    .carta p,
-    .servicio-card p,
-    .tarjeta-servicio p {
-        font-size: 1rem;
-        line-height: 1.5;
-        text-align: center;
-    }
-
-    .carta button,
-    .servicio-card button,
-    .tarjeta-servicio button {
-        margin-top: 18px;
-    }
+.carta button {
+    margin-top: 18px;
+}
 
     /* BLOQUES INTERNOS DE SERVICIO DETALLADO */
     .info-detallada .container,
