@@ -9,9 +9,9 @@
         content="width=device-width, initial-scale=1.0"
     >
 
-    <title>
-        Ayelen Tapia | Kinesiología y Rehabilitación
-    </title>
+      <title>
+    Ayelen Tapia | Kinesiología y Rehabilitación en Mar del Plata
+</title>
 
     <meta
         name="description"
@@ -35,12 +35,9 @@
         content="Kinesiología y rehabilitación en Mar del Plata. Evaluación, ejercicio terapéutico, ATM, punción seca, terapia manual y más."
     >
 
-    <meta property="og:type" content="website">
+    <meta property="og:title" content="Ayelen Tapia | Kinesiología y Rehabilitación en Mar del Plata">
 
-    <meta
-        property="og:url"
-        content="https://ayelentapia.com.ar"
-    >
+    <meta property="og:url" content="https://ayelentapia.com.ar/">
 
     <meta
         property="og:image"
@@ -73,10 +70,12 @@
 
 
         <button
+            type="button"
             class="menu-toggle"
             id="menu-toggle"
             aria-label="Abrir menú"
-            aria-expanded="false">
+            aria-expanded="false"
+            aria-controls="menu-navegacion">
 
             <span></span>
             <span></span>
@@ -90,7 +89,9 @@
     <div class="menu-overlay" id="menu-overlay"></div>
 
 
-    <nav class="menu-navegacion" id="menu-navegacion">
+    <nav class="menu-navegacion"
+     id="menu-navegacion"
+     aria-label="Navegación principal">
 
 
         <div class="menu-links">
@@ -119,7 +120,8 @@
             <a
                 href="https://wa.me/5492236104420?text=Hola%20Ayelen,%20quisiera%20solicitar%20un%20turno%20de%20kinesiolog%C3%ADa."
                 target="_blank"
-                class="menu-turno">
+                class="menu-turno"
+                rel="noopener noreferrer">
 
                 Solicitar turno
 
@@ -155,9 +157,11 @@
         <div class="hero-botones">
 
             <a href="https://wa.me/5492236104420?text=Hola%20Ayelen,%20quisiera%20solicitar%20un%20turno%20de%20kinesiolog%C3%ADa."
-               target="_blank">
-                <button>Solicitar turno</button>
-            </a>
+   target="_blank"
+   rel="noopener noreferrer"
+   class="boton-principal">
+    Solicitar turno
+</a>
 
             <a href="#mis-servicios" class="boton-secundario">
                 Ver servicios
@@ -175,7 +179,7 @@
     <div class="container">
 
         <div class="foto-perfil">
-            <img src="media/fotoyo.jpeg" alt="Licenciada en Kinesiología">
+           <img src="media/fotoyo.jpeg" alt="Lic. Ayelen Tapia, kinesióloga en Mar del Plata">
         </div>
 
         <div class="texto-quien-soy">
@@ -216,7 +220,7 @@
         cirugía o proceso de dolor, con un plan de ejercicios adaptado a vos.
     </p>
 
-    <button onclick="mostrarInfo('info-rehabilitacion')">+ Info</button>
+    <button type="button" onclick="mostrarInfo('info-rehabilitacion')">+ Info</button>
 
 
 </div>
@@ -230,7 +234,7 @@
     </p>
     
    
-     <button onclick="mostrarInfo('info-drenaje')">+ Info</button>
+     <button type="button" onclick="mostrarInfo('info-drenaje')">+ Info</button>
 
 </div>
 
@@ -242,7 +246,7 @@
         movimiento y función después de lesiones, cirugías o alteraciones.
     </p>
 
-    <button onclick="mostrarInfo('info-maxilofacial')">+ Info</button>
+    <button type="button" onclick="mostrarInfo('info-maxilofacial')">+ Info</button>
 
 </div>
 
@@ -255,8 +259,7 @@
         y síntomas asociados al bruxismo.
     </p>
 
-    <button onclick="mostrarInfo('info-atm')">+ Info</button>
-
+    <button type="button" onclick="mostrarInfo('info-atm')">+ Info</button>
 </div>
 
 
@@ -267,7 +270,7 @@
         el dolor y acompañar el tratamiento de distintas condiciones.
     </p>
 
-    <button onclick="mostrarInfo('info-acupuntura')">+ Info</button>
+    <button type="button" onclick="mostrarInfo('info-acupuntura')">+ Info</button>
 
 </div>
 
@@ -279,7 +282,7 @@
         acompañar el manejo del dolor y recuperar movimiento y función.
     </p>
 
-    <button onclick="mostrarInfo('info-terapia-manual')">+ Info</button>
+    <button type="button" onclick="mostrarInfo('info-terapia-manual')">+ Info</button>
 
 </div>
 
@@ -363,9 +366,12 @@
 
                     <button onclick="cerrarInfo()">Cerrar</button>
 
-                    <a href="https://wa.me/5492236104420?text=Hola%20Ayelen,%20quisiera%20solicitar%20un%20turno%20de%20kinesiolog%C3%ADa." target="_blank">
-                        <button>Reservá tu turno</button>
-                    </a>
+                    <a href="https://wa.me/5492236104420?text=Hola%20Ayelen,%20quisiera%20solicitar%20un%20turno%20de%20kinesiolog%C3%ADa."
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="boton-principal">
+                            Reservá tu turno
+                        </a>
 
                 </div>
 
@@ -426,9 +432,12 @@
 
                     <button onclick="cerrarInfo()">Cerrar</button>
 
-                    <a href="https://wa.me/5492236104420?text=Hola%20Ayelen,%20quisiera%20solicitar%20un%20turno%20de%20kinesiolog%C3%ADa." target="_blank">
-                        <button>Reservá tu turno</button>
-                    </a>
+                    <a href="https://wa.me/5492236104420?text=Hola%20Ayelen,%20quisiera%20solicitar%20un%20turno%20de%20kinesiolog%C3%ADa."
+   target="_blank"
+   rel="noopener noreferrer"
+   class="boton-principal">
+    Reservá tu turno
+</a>
 
                 </div>
 
@@ -489,9 +498,12 @@
 
                     <button onclick="cerrarInfo()">Cerrar</button>
 
-                    <a href="https://wa.me/5492236104420?text=Hola%20Ayelen,%20quisiera%20solicitar%20un%20turno%20de%20kinesiolog%C3%ADa." target="_blank">
-                        <button>Reservá tu turno</button>
-                    </a>
+                    <a href="https://wa.me/5492236104420?text=Hola%20Ayelen,%20quisiera%20solicitar%20un%20turno%20de%20kinesiolog%C3%ADa."
+   target="_blank"
+   rel="noopener noreferrer"
+   class="boton-principal">
+    Reservá tu turno
+</a>
 
                 </div>
 
@@ -555,9 +567,12 @@
 
                     <button onclick="cerrarInfo()">Cerrar</button>
 
-                    <a href="https://wa.me/5492236104420?text=Hola%20Ayelen,%20quisiera%20solicitar%20un%20turno%20de%20kinesiolog%C3%ADa." target="_blank">
-                        <button>Reservá tu turno</button>
-                    </a>
+                    <a href="https://wa.me/5492236104420?text=Hola%20Ayelen,%20quisiera%20solicitar%20un%20turno%20de%20kinesiolog%C3%ADa."
+   target="_blank"
+   rel="noopener noreferrer"
+   class="boton-principal">
+    Reservá tu turno
+</a>
 
                 </div>
 
@@ -620,9 +635,12 @@
 
                     <button onclick="cerrarInfo()">Cerrar</button>
 
-                    <a href="https://wa.me/5492236104420?text=Hola%20Ayelen,%20quisiera%20solicitar%20un%20turno%20de%20kinesiolog%C3%ADa." target="_blank">
-                        <button>Reservá tu turno</button>
-                    </a>
+                    <a href="https://wa.me/5492236104420?text=Hola%20Ayelen,%20quisiera%20solicitar%20un%20turno%20de%20kinesiolog%C3%ADa."
+   target="_blank"
+   rel="noopener noreferrer"
+   class="boton-principal">
+    Reservá tu turno
+</a>
 
                 </div>
 
@@ -685,9 +703,12 @@
 
                     <button onclick="cerrarInfo()">Cerrar</button>
 
-                    <a href="https://wa.me/5492236104420?text=Hola%20Ayelen,%20quisiera%20solicitar%20un%20turno%20de%20kinesiolog%C3%ADa." target="_blank">
-                        <button>Reservá tu turno</button>
-                    </a>
+                    <a href="https://wa.me/5492236104420?text=Hola%20Ayelen,%20quisiera%20solicitar%20un%20turno%20de%20kinesiolog%C3%ADa."
+   target="_blank"
+   rel="noopener noreferrer"
+   class="boton-principal">
+    Reservá tu turno
+</a>
 
                 </div>
 
@@ -750,9 +771,12 @@
 
                     <button onclick="cerrarInfo()">Cerrar</button>
 
-                    <a href="https://wa.me/5492236104420?text=Hola%20Ayelen,%20quisiera%20solicitar%20un%20turno%20de%20kinesiolog%C3%ADa." target="_blank">
-                        <button>Reservá tu turno</button>
-                    </a>
+                    <a href="https://wa.me/5492236104420?text=Hola%20Ayelen,%20quisiera%20solicitar%20un%20turno%20de%20kinesiolog%C3%ADa."
+   target="_blank"
+   rel="noopener noreferrer"
+   class="boton-principal">
+    Reservá tu turno
+</a>
 
                 </div>
 
@@ -816,9 +840,12 @@
 
                     <button onclick="cerrarInfo()">Cerrar</button>
 
-                    <a href="https://wa.me/5492236104420?text=Hola%20Ayelen,%20quisiera%20solicitar%20un%20turno%20de%20kinesiolog%C3%ADa." target="_blank">
-                        <button>Reservá tu turno</button>
-                    </a>
+                    <a href="https://wa.me/5492236104420?text=Hola%20Ayelen,%20quisiera%20solicitar%20un%20turno%20de%20kinesiolog%C3%ADa."
+   target="_blank"
+   rel="noopener noreferrer"
+   class="boton-principal">
+    Reservá tu turno
+</a>
 
                 </div>
 
@@ -1005,7 +1032,10 @@
 
             <div class="contacto-datos">
 
-                <a href="https://wa.me/5492236104420" target="_blank" class="contacto-item">
+                <a href="https://wa.me/5492236104420"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="contacto-item">
                     <i class="fa-brands fa-whatsapp"></i>
 
                     <div>
@@ -1039,6 +1069,7 @@
 
             <a href="https://wa.me/5492236104420?text=Hola%20Ayelen,%20quisiera%20hacer%20una%20consulta."
                target="_blank"
+                rel="noopener noreferrer"
                class="contacto-boton">
 
                 Escribime por WhatsApp
@@ -1081,6 +1112,7 @@
 
             <a href="https://www.instagram.com/aye.kinesio/"
                target="_blank"
+               rel="noopener noreferrer"
                class="red-social red-instagram">
 
                 <i class="fa-brands fa-instagram"></i>
@@ -1098,6 +1130,7 @@
 
             <a href="https://www.facebook.com/aye.kinesio"
                target="_blank"
+                rel="noopener noreferrer"
                class="red-social">
 
                 <i class="fa-brands fa-facebook-f"></i>
@@ -1114,6 +1147,7 @@
 
             <a href="https://www.tiktok.com/@ayelen.369?_r=1&_t=ZS-9A5Zup7qpYF"
    target="_blank"
+   rel="noopener noreferrer"
    class="red-social">
 
     <i class="fa-brands fa-tiktok"></i>
@@ -1134,6 +1168,7 @@
 
 <a href="https://youtube.com/@ayelentapia-369?si=MauJEAE1Puiae0im"
    target="_blank"
+    rel="noopener noreferrer"
    class="red-social">
 
     <i class="fa-brands fa-youtube"></i>
@@ -1172,6 +1207,7 @@
 
         <a href="https://wa.me/5492236104420?text=Hola%20Ayelen,%20quisiera%20solicitar%20un%20turno%20de%20kinesiolog%C3%ADa."
            target="_blank"
+           rel="noopener noreferrer"
            class="cta-boton">
 
             Solicitar turno por WhatsApp
@@ -1226,24 +1262,28 @@
 
                 <a href="https://www.instagram.com/aye.kinesio/"
                    target="_blank"
-                   aria-label="Instagram">
+                   rel="noopener noreferrer"
+                    aria-label="Instagram">
                     <i class="fa-brands fa-instagram"></i>
                 </a>
 
                 <a href="https://www.facebook.com/aye.kinesio"
                    target="_blank"
+                   rel="noopener noreferrer"
                    aria-label="Facebook">
                     <i class="fa-brands fa-facebook-f"></i>
                 </a>
 
                 <a href="https://www.tiktok.com/@ayelen.369?_r=1&_t=ZS-9A5Zup7qpYF"
                    target="_blank"
+                   rel="noopener noreferrer"
                    aria-label="TikTok">
                     <i class="fa-brands fa-tiktok"></i>
                 </a>
 
                 <a href="https://youtube.com/@ayelentapia-369?si=MauJEAE1Puiae0im"
                    target="_blank"
+                   rel="noopener noreferrer"
                    aria-label="YouTube">
                     <i class="fa-brands fa-youtube"></i>
                 </a>

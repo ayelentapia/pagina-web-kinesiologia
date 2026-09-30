@@ -2433,3 +2433,20 @@ img {
     }
 }
 
+.boton-principal {
+    display: inline-block;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: #4F9DDE;
+    text-decoration: none;
+}
+
+.boton-principal:hover {
+    background-color: #3D86C4;
+}
+
