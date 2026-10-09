@@ -67,7 +67,7 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    />
+    integrity="sha384-PPIZEGYM1v8zp5Py7UjFb79S58UeqCL9pYVnVPURKEqvioPROaVAJKKLzvH2rDnI" crossorigin="anonymous">
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -217,7 +217,7 @@
               vos.
             </p>
 
-            <button type="button" onclick="mostrarInfo('info-rehabilitacion')">
+            <button type="button" data-info-target="info-rehabilitacion">
               + Info
             </button>
           </div>
@@ -230,7 +230,7 @@
               linfáticas.
             </p>
 
-            <button type="button" onclick="mostrarInfo('info-drenaje')">
+            <button type="button" data-info-target="info-drenaje">
               + Info
             </button>
           </div>
@@ -243,7 +243,7 @@
               alteraciones.
             </p>
 
-            <button type="button" onclick="mostrarInfo('info-maxilofacial')">
+            <button type="button" data-info-target="info-maxilofacial">
               + Info
             </button>
           </div>
@@ -256,7 +256,7 @@
               síntomas asociados al bruxismo.
             </p>
 
-            <button type="button" onclick="mostrarInfo('info-atm')">
+            <button type="button" data-info-target="info-atm">
               + Info
             </button>
           </div>
@@ -268,7 +268,7 @@
               el dolor y acompañar el tratamiento de distintas condiciones.
             </p>
 
-            <button type="button" onclick="mostrarInfo('info-acupuntura')">
+            <button type="button" data-info-target="info-acupuntura">
               + Info
             </button>
           </div>
@@ -280,7 +280,7 @@
               acompañar el manejo del dolor y recuperar movimiento y función.
             </p>
 
-            <button type="button" onclick="mostrarInfo('info-terapia-manual')">
+            <button type="button" data-info-target="info-terapia-manual">
               + Info
             </button>
           </div>
@@ -292,7 +292,7 @@
               para abordar zonas musculares sensibles y mejorar su función.
             </p>
 
-            <button type="button" onclick="mostrarInfo('info-puncion-seca')">
+            <button type="button" data-info-target="info-puncion-seca">
               + Info
             </button>
           </div>
@@ -304,7 +304,7 @@
               fuerza, capacidad física y confianza en el movimiento.
             </p>
 
-            <button type="button" onclick="mostrarInfo('info-entrenamiento')">
+            <button type="button" data-info-target="info-entrenamiento">
               + Info
             </button>
           </div>
@@ -361,7 +361,7 @@
             </p>
 
             <div class="info-botones">
-              <button onclick="cerrarInfo()">Cerrar</button>
+              <button type="button" data-info-close>Cerrar</button>
 
               <a
                 href="https://wa.me/5492236104420?text=Hola%20Ayelen,%20quisiera%20solicitar%20un%20turno%20de%20kinesiolog%C3%ADa."
@@ -422,7 +422,7 @@
             </p>
 
             <div class="info-botones">
-              <button onclick="cerrarInfo()">Cerrar</button>
+              <button type="button" data-info-close>Cerrar</button>
 
               <a
                 href="https://wa.me/5492236104420?text=Hola%20Ayelen,%20quisiera%20solicitar%20un%20turno%20de%20kinesiolog%C3%ADa."
@@ -487,7 +487,7 @@
             </p>
 
             <div class="info-botones">
-              <button onclick="cerrarInfo()">Cerrar</button>
+              <button type="button" data-info-close>Cerrar</button>
 
               <a
                 href="https://wa.me/5492236104420?text=Hola%20Ayelen,%20quisiera%20solicitar%20un%20turno%20de%20kinesiolog%C3%ADa."
@@ -552,7 +552,7 @@
             </p>
 
             <div class="info-botones">
-              <button onclick="cerrarInfo()">Cerrar</button>
+              <button type="button" data-info-close>Cerrar</button>
 
               <a
                 href="https://wa.me/5492236104420?text=Hola%20Ayelen,%20quisiera%20solicitar%20un%20turno%20de%20kinesiolog%C3%ADa."
@@ -617,7 +617,7 @@
             </p>
 
             <div class="info-botones">
-              <button onclick="cerrarInfo()">Cerrar</button>
+              <button type="button" data-info-close>Cerrar</button>
 
               <a
                 href="https://wa.me/5492236104420?text=Hola%20Ayelen,%20quisiera%20solicitar%20un%20turno%20de%20kinesiolog%C3%ADa."
@@ -677,7 +677,7 @@
             </p>
 
             <div class="info-botones">
-              <button onclick="cerrarInfo()">Cerrar</button>
+              <button type="button" data-info-close>Cerrar</button>
 
               <a
                 href="https://wa.me/5492236104420?text=Hola%20Ayelen,%20quisiera%20solicitar%20un%20turno%20de%20kinesiolog%C3%ADa."
@@ -737,7 +737,7 @@
             </p>
 
             <div class="info-botones">
-              <button onclick="cerrarInfo()">Cerrar</button>
+              <button type="button" data-info-close>Cerrar</button>
 
               <a
                 href="https://wa.me/5492236104420?text=Hola%20Ayelen,%20quisiera%20solicitar%20un%20turno%20de%20kinesiolog%C3%ADa."
@@ -801,7 +801,7 @@
             </p>
 
             <div class="info-botones">
-              <button onclick="cerrarInfo()">Cerrar</button>
+              <button type="button" data-info-close>Cerrar</button>
 
               <a
                 href="https://wa.me/5492236104420?text=Hola%20Ayelen,%20quisiera%20solicitar%20un%20turno%20de%20kinesiolog%C3%ADa."

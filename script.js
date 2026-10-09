@@ -116,3 +116,14 @@ elementosReveal.forEach(function(elemento) {
     observer.observe(elemento);
 
 });
+
+// Acciones de servicios: compatibles con una CSP sin scripts inline.
+document.querySelectorAll("[data-info-target]").forEach(function(button) {
+    button.addEventListener("click", function() {
+        mostrarInfo(button.dataset.infoTarget);
+    });
+});
+
+document.querySelectorAll("[data-info-close]").forEach(function(button) {
+    button.addEventListener("click", cerrarInfo);
+});
