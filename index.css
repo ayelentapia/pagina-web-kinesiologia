@@ -231,3 +231,18 @@ footer p { margin-bottom: 6px; }
   .carta { min-height: 280px; }
   .foto-perfil { width: 230px; height: 230px; }
 }
+
+/* Evitar el desplazamiento horizontal */
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+@supports (overflow: clip) {
+  html,
+  body {
+    overflow-x: clip;
+  }
+}
