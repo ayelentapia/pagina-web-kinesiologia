@@ -49,15 +49,36 @@
       rel="stylesheet"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="theme-color" content="#1f78c8" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="ATM y Bruxismo en Mar del Plata | Lic. Ayelen Tapia"
+    />
+    <meta
+      property="og:description"
+      content="Kinesiología para dolor mandibular, bruxismo y tensión muscular en Mar del Plata."
+    />
+    <meta
+      property="og:url"
+      content="https://ayelentapia.com.ar/atm-bruxismo/"
+    />
     <link rel="stylesheet" href="atm.css" />
   </head>
 
   <body>
     <header class="atm-header">
-      <nav class="navbar navbar-expand-sm">
+      <nav class="navbar navbar-expand-lg">
         <div class="container">
           <a class="navbar-brand atm-brand" href="https://ayelentapia.com.ar/">
-            Lic. Ayelen Tapia
+            <span class="atm-brand-nombre">Ayelen Tapia</span>
+            <span class="atm-brand-sub">Kinesiología</span>
           </a>
 
           <button
@@ -130,64 +151,55 @@
           <div class="row align-items-center g-0 atm-hero-row">
             <div class="col-md-6">
               <div class="atm-hero-content">
-                <p class="atm-kicker">
-                  KINESIOLOGÍA ESPECIALIZADA EN ATM Y BRUXISMO EN MAR DEL PLATA
-                </p>
-
-                <h1>
-                  ATM y Bruxismo
-                  <span>en Mar del Plata</span>
-                </h1>
+                <h1>ATM y Bruxismo</h1>
 
                 <p class="atm-hero-copy">
-                  Evaluación y tratamiento kinésico para dolor mandibular,
-                  bruxismo, tensión muscular, molestias al abrir o cerrar la
-                  boca y otros síntomas del sistema estomatognático.
+                  Evaluación y tratamiento kinésico para
+                  <strong>dolor mandibular</strong>, <strong>bruxismo</strong>,
+                  <strong>tensión muscular</strong>, molestias al abrir o cerrar
+                  la boca y otros síntomas del sistema estomatognático.
                 </p>
-
-                <div class="atm-hero-actions">
-                  <a
-                    href="https://wa.me/5492236104420?text=Hola%20Ayelen,%20quisiera%20consultar%20por%20ATM%20y%20bruxismo."
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="btn atm-btn-primary"
-                  >
-                    Solicitar turno por WhatsApp
-                  </a>
-
-                  <a
-                    href="https://ayelentapia.com.ar/#mis-servicios"
-                    class="btn atm-btn-secondary"
-                  >
-                    Ver todos mis servicios
-                  </a>
-                </div>
 
                 <div class="atm-benefits">
                   <div class="atm-benefit">
-                    <span>✓</span>
+                    <span
+                      ><i class="bi bi-person-heart" aria-hidden="true"></i
+                    ></span>
                     <p>Atención personalizada</p>
                   </div>
 
                   <div class="atm-benefit">
-                    <span>✓</span>
+                    <span
+                      ><i class="bi bi-shield-check" aria-hidden="true"></i
+                    ></span>
                     <p>Enfoque integral</p>
                   </div>
 
                   <div class="atm-benefit">
-                    <span>✓</span>
+                    <span
+                      ><i class="bi bi-heart-pulse" aria-hidden="true"></i
+                    ></span>
                     <p>Basado en evidencia</p>
                   </div>
                 </div>
+
+                <p class="atm-ubicacion">
+                  <i class="bi bi-geo-alt-fill" aria-hidden="true"></i> Atención
+                  presencial en Mar del Plata
+                </p>
               </div>
             </div>
 
             <div class="col-md-6">
               <div class="atm-hero-image">
                 <img
-                  src="../media/atm-bruxismo-hero.jpg"
+                  fetchpriority="high"
+                  src="media/atm-bruxismo-hero.jpg"
                   alt="Tratamiento kinésico de ATM y bruxismo en Mar del Plata"
                 />
+                <p class="atm-hero-script">
+                  Menos dolor,<br />más bienestar<br />para tu día a día
+                </p>
               </div>
             </div>
           </div>
@@ -196,7 +208,6 @@
 
       <section class="sintomas-atm">
         <div class="container">
-          <p class="seccion-etiqueta">¿TE SENTÍS IDENTIFICADO/A?</p>
           <h2>¿Te sentís identificado/a?</h2>
           <p class="seccion-intro">
             Muchas personas conviven con molestias en la mandíbula sin saber que
@@ -221,7 +232,7 @@
 
             <article class="sintoma-atm-card">
               <div class="sintoma-icono">
-                <i class="bi bi-lightning-charge"></i>
+                <i class="bi bi-sunrise"></i>
               </div>
               <h3>Tensión al despertar</h3>
             </article>
@@ -236,7 +247,7 @@
 
             <article class="sintoma-atm-card">
               <div class="sintoma-icono">
-                <i class="bi bi-headset"></i>
+                <i class="bi bi-lightning-charge"></i>
               </div>
               <h3>Dolor de cabeza frecuente</h3>
             </article>
@@ -282,8 +293,6 @@
         <div class="container">
           <div class="explicacion-atm-grid">
             <div class="explicacion-atm-texto">
-              <p class="seccion-etiqueta">ENTENDER EL PROBLEMA</p>
-
               <h2>¿Qué es la ATM?</h2>
 
               <p>
@@ -298,6 +307,14 @@
                 pueden aparecer dolor, rigidez, ruidos articulares o limitación
                 del movimiento mandibular.
               </p>
+              <figure class="atm-figura">
+                <img
+                  src="../media/atm-anatomia.jpg"
+                  alt="Diagrama de la articulación temporomandibular y los músculos de la masticación"
+                  loading="lazy"
+                  onerror="this.parentElement.remove()"
+                />
+              </figure>
             </div>
 
             <div class="explicacion-bruxismo">
@@ -314,6 +331,13 @@
                 mandibular, cefaleas, rigidez al despertar y molestias en la
                 región cervical.
               </p>
+              <div class="atm-nota">
+                <i class="bi bi-info-circle-fill" aria-hidden="true"></i>
+                <p>
+                  El bruxismo no solo afecta los dientes: también influye en la
+                  musculatura, la articulación y tu calidad de vida.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -321,8 +345,6 @@
 
       <section class="abordaje-atm">
         <div class="container">
-          <p class="seccion-etiqueta">ABORDAJE PERSONALIZADO</p>
-
           <h2>¿Cómo puedo ayudarte?</h2>
 
           <p class="seccion-intro">
@@ -331,8 +353,22 @@
             mismas técnicas ni el mismo abordaje.
           </p>
 
+          <figure class="atm-banner">
+            <img
+              src="../media/atm-tratamiento.jpg"
+              alt="Terapia manual en la zona mandibular durante una sesión de kinesiología"
+              loading="lazy"
+              onerror="this.parentElement.remove()"
+            />
+            <figcaption>
+              Un tratamiento integral para aliviar el dolor y mejorar tu calidad
+              de vida.
+            </figcaption>
+          </figure>
+
           <div class="abordaje-atm-grid">
             <article class="abordaje-atm-card">
+              <i class="bi bi-clipboard2-pulse" aria-hidden="true"></i>
               <h3>Evaluación kinésico-odontológica</h3>
 
               <p>
@@ -343,6 +379,7 @@
             </article>
 
             <article class="abordaje-atm-card">
+              <i class="bi bi-hand-index-thumb" aria-hidden="true"></i>
               <h3>Terapia manual</h3>
 
               <p>
@@ -352,6 +389,7 @@
             </article>
 
             <article class="abordaje-atm-card">
+              <i class="bi bi-activity" aria-hidden="true"></i>
               <h3>Ejercicio terapéutico</h3>
 
               <p>
@@ -361,6 +399,7 @@
             </article>
 
             <article class="abordaje-atm-card">
+              <i class="bi bi-bullseye" aria-hidden="true"></i>
               <h3>Punción seca</h3>
 
               <p>
@@ -370,6 +409,7 @@
             </article>
 
             <article class="abordaje-atm-card">
+              <i class="bi bi-lightning-charge" aria-hidden="true"></i>
               <h3>Electroestimulación</h3>
 
               <p>
@@ -379,6 +419,7 @@
             </article>
 
             <article class="abordaje-atm-card">
+              <i class="bi bi-people" aria-hidden="true"></i>
               <h3>Trabajo interdisciplinario</h3>
 
               <p>
@@ -403,8 +444,6 @@
 
       <section class="proceso-atm">
         <div class="container">
-          <p class="seccion-etiqueta">TU CONSULTA</p>
-
           <h2>¿Cómo es una consulta conmigo?</h2>
 
           <p class="seccion-intro">
@@ -414,7 +453,7 @@
 
           <div class="proceso-atm-grid">
             <article class="proceso-atm-item">
-              <span class="proceso-numero">01</span>
+              <span class="proceso-numero">1</span>
 
               <h3>Te escucho</h3>
 
@@ -425,7 +464,7 @@
             </article>
 
             <article class="proceso-atm-item">
-              <span class="proceso-numero">02</span>
+              <span class="proceso-numero">2</span>
 
               <h3>Evaluamos</h3>
 
@@ -436,7 +475,7 @@
             </article>
 
             <article class="proceso-atm-item">
-              <span class="proceso-numero">03</span>
+              <span class="proceso-numero">3</span>
 
               <h3>Armamos el tratamiento</h3>
 
@@ -448,7 +487,7 @@
             </article>
 
             <article class="proceso-atm-item">
-              <span class="proceso-numero">04</span>
+              <span class="proceso-numero">4</span>
 
               <h3>Seguimos tu evolución</h3>
 
@@ -458,85 +497,102 @@
               </p>
             </article>
           </div>
+          <aside class="proceso-info">
+            <p>
+              <i class="bi bi-clock" aria-hidden="true"></i
+              ><span
+                ><strong>Duración:</strong> 50 minutos en la primera
+                consulta</span
+              >
+            </p>
+            <p>
+              <i class="bi bi-geo-alt" aria-hidden="true"></i
+              ><span
+                ><strong>Modalidad:</strong> presencial en Mar del Plata</span
+              >
+            </p>
+            <p>
+              <i class="bi bi-calendar-check" aria-hidden="true"></i
+              ><span><strong>Turnos:</strong> por WhatsApp</span>
+            </p>
+            <a
+              href="https://wa.me/5492236104420?text=Hola%20Ayelen,%20quisiera%20consultar%20por%20ATM%20y%20bruxismo."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn atm-btn-primary"
+              ><i class="bi bi-whatsapp" aria-hidden="true"></i> Solicitar turno
+              por WhatsApp</a
+            >
+          </aside>
         </div>
       </section>
 
       <section class="faq-atm">
         <div class="container">
-          <p class="seccion-etiqueta">PREGUNTAS FRECUENTES</p>
-
           <h2>Dudas frecuentes sobre ATM y Bruxismo</h2>
 
-          <div class="faq-atm-item">
-            <h3>¿La kinesiología puede ayudar con el bruxismo?</h3>
-
+          <details class="faq-atm-item" open>
+            <summary>¿La kinesiología puede ayudar con el bruxismo?</summary>
             <p>
               Sí. La kinesiología puede formar parte del abordaje cuando existen
               dolor mandibular, tensión muscular, rigidez, cefaleas o
               alteraciones funcionales asociadas al bruxismo.
             </p>
-          </div>
+          </details>
 
-          <div class="faq-atm-item">
-            <h3>
+          <details class="faq-atm-item">
+            <summary>
               ¿Qué síntomas pueden relacionarse con una disfunción de ATM?
-            </h3>
-
+            </summary>
             <p>
               Dolor mandibular, molestias al masticar, chasquidos, limitación
               para abrir la boca, tensión facial, cefaleas y molestias en la
               región cráneo-cervical pueden aparecer en algunos pacientes.
             </p>
-          </div>
+          </details>
 
-          <div class="faq-atm-item">
-            <h3>
+          <details class="faq-atm-item">
+            <summary>
               ¿Necesito tener diagnóstico odontológico antes de consultar?
-            </h3>
-
+            </summary>
             <p>
               No necesariamente. La evaluación kinésica permite analizar
               movilidad, musculatura y función. Si el caso requiere valoración
               odontológica u otro abordaje, puede indicarse trabajo
               interdisciplinario.
             </p>
-          </div>
+          </details>
 
-          <div class="faq-atm-item">
-            <h3>¿El tratamiento de ATM incluye punción seca?</h3>
-
+          <details class="faq-atm-item">
+            <summary>¿El tratamiento de ATM incluye punción seca?</summary>
             <p>
               Puede utilizarse como complemento cuando la evaluación muestra
               tensión muscular o puntos gatillo miofasciales y existe indicación
               para aplicar la técnica.
             </p>
-          </div>
+          </details>
 
-          <div class="faq-atm-item">
-            <h3>¿También se trabaja la zona cervical?</h3>
-
+          <details class="faq-atm-item">
+            <summary>¿También se trabaja la zona cervical?</summary>
             <p>
               Sí. La región cráneo-cervical puede evaluarse cuando está
               relacionada con los síntomas y la función mandibular, integrándola
               al tratamiento según las necesidades del paciente.
             </p>
-          </div>
+          </details>
 
-          <div class="faq-atm-item">
-            <h3>¿Dónde realizás tratamiento de ATM y Bruxismo?</h3>
-
+          <details class="faq-atm-item">
+            <summary>¿Dónde realizás tratamiento de ATM y Bruxismo?</summary>
             <p>
               Atiendo pacientes en Mar del Plata con un abordaje kinésico
               personalizado de ATM, bruxismo y sistema estomatognático.
             </p>
-          </div>
+          </details>
         </div>
       </section>
 
       <section class="cta-atm">
         <div class="container">
-          <p class="seccion-etiqueta">¿TE SENTÍS IDENTIFICADO/A?</p>
-
           <h2>
             Si tenés dolor mandibular, bruxismo o tensión al despertar, podemos
             evaluar qué está pasando en tu caso.
@@ -552,13 +608,26 @@
             href="https://wa.me/5492236104420?text=Hola%20Ayelen,%20quisiera%20consultar%20por%20ATM%20y%20bruxismo."
             target="_blank"
             rel="noopener noreferrer"
-            class="boton-principal"
+            class="btn atm-btn-primary"
           >
-            Consultar por WhatsApp
+            <i class="bi bi-whatsapp" aria-hidden="true"></i> Consultar por
+            WhatsApp
           </a>
         </div>
       </section>
     </main>
+    <a
+      id="wa-flotante"
+      class="wa-flotante"
+      href="https://wa.me/5492236104420?text=Hola%20Ayelen,%20quisiera%20consultar%20por%20ATM%20y%20bruxismo."
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Solicitar turno por WhatsApp"
+    >
+      <i class="bi bi-whatsapp" aria-hidden="true"></i>
+      <span>Solicitar turno</span>
+    </a>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="atm.js"></script>
   </body>
 </html>

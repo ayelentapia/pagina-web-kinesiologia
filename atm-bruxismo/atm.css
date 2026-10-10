@@ -1,962 +1,282 @@
+/* ATM y Bruxismo - Lic. Ayelen Tapia */
 :root {
-    --atm-primary: #2f93df;
-    --atm-primary-dark: #163b69;
-    --atm-text: #405b76;
-    --atm-light: #eef8ff;
-    --atm-border: #d9edf9;
+  --ink: #12315a;
+  --text: #435a72;
+  --blue: #1f78c8;
+  --blue-dark: #1a64a8;
+  --sky: #2f93df;
+  --tint: #eef6fd;
+  --tint-2: #f6fafe;
+  --line: #d9e8f5;
+  --font: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  --serif: "Fraunces", Georgia, serif;
+  --page: 72rem;
 }
 
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    color: var(--atm-primary-dark);
-    background: #ffffff;
-}
-
+html { scroll-behavior: smooth; scroll-padding-top: 64px; }
+body { margin: 0; font-family: var(--font); color: var(--text); background: #fff; line-height: 1.65; -webkit-font-smoothing: antialiased; }
+h1, h2, h3 { color: var(--ink); font-family: var(--font); letter-spacing: -0.02em; }
+h2 { font-size: clamp(1.7rem, 3vw, 2.25rem); font-weight: 800; line-height: 1.15; margin: 0 0 14px; }
+h3 { font-size: 1.05rem; font-weight: 700; margin: 0 0 8px; }
+p { margin: 0 0 14px; }
+:focus-visible { outline: 3px solid var(--sky); outline-offset: 3px; border-radius: 6px; }
+main > section { padding: 76px 0; }
+.container { max-width: var(--page); padding-left: 24px; padding-right: 24px; }
+.seccion-intro { max-width: 62ch; margin-bottom: 36px; font-size: 1.05rem; }
 
 /* HEADER */
+.atm-header { position: sticky; top: 0; z-index: 50; background: rgba(255, 255, 255, 0.94); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+.atm-header .navbar { min-height: 54px; padding: 5px 0; }
+.atm-brand { display: flex; flex-direction: column; line-height: 1.1; padding: 0; font-family: Arial, Helvetica, sans-serif; }
+.atm-brand-nombre { font-size: 1.2rem; font-weight: 700; color: #1d3550; letter-spacing: -0.01em; }
+.atm-brand-sub { margin-top: 3px; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: #4f9dde; }
+.atm-header .navbar-nav { gap: 26px; align-items: center; }
+.atm-header .nav-link { position: relative; padding: 5px 0; font-size: 0.88rem; font-weight: 500; color: var(--text); }
+.atm-header .nav-link:hover, .atm-header .nav-link.active { color: var(--blue); }
+.atm-header .nav-link.active { font-weight: 700; }
+.atm-header .nav-link.active::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 2px; border-radius: 2px; background: var(--blue); }
+.atm-nav-btn { background: var(--blue); color: #fff; border-radius: 999px; padding: 8px 20px; font-size: 0.85rem; font-weight: 700; }
+.atm-nav-btn:hover { background: var(--blue-dark); color: #fff; }
 
-.atm-header {
-    background: #ffffff;
-    border-bottom: 1px solid rgba(22, 59, 105, 0.08);
-}
-
-.atm-header .navbar {
-    min-height: 72px;
-}
-
-.atm-brand {
-    font-weight: 700;
-    color: var(--atm-primary-dark);
-    font-size: 1.15rem;
-}
-
-.atm-header .nav-link {
-    color: #38546d;
-    font-size: 0.93rem;
-    margin: 0 10px;
-    padding: 24px 0 20px;
-    position: relative;
-}
-
-.atm-header .nav-link:hover {
-    color: var(--atm-primary);
-}
-
-.atm-header .nav-link.active {
-    color: var(--atm-primary);
-    font-weight: 700;
-}
-
-.atm-header .nav-link.active::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 12px;
-    height: 2px;
-    border-radius: 2px;
-    background: var(--atm-primary);
-}
-
-.atm-nav-btn {
-    background: var(--atm-primary);
-    color: white;
-    border-radius: 999px;
-    padding: 10px 20px;
-    font-size: 0.9rem;
-    font-weight: 700;
-}
-
-.atm-nav-btn:hover {
-    background: #2784ca;
-    color: white;
-}
-
+/* BOTONES */
+.atm-btn-primary, .atm-btn-secondary { display: inline-flex; align-items: center; justify-content: center; gap: 9px; min-height: 48px; padding: 12px 26px; border-radius: 999px; font-size: 0.95rem; font-weight: 700; transition: background 0.2s, box-shadow 0.2s; }
+.atm-btn-primary { background: var(--blue); color: #fff; border: 2px solid var(--blue); box-shadow: 0 8px 20px rgba(31, 120, 200, 0.28); }
+.atm-btn-primary:hover { background: var(--blue-dark); border-color: var(--blue-dark); color: #fff; }
+.atm-btn-secondary { border: 2px solid var(--blue); color: var(--blue); background: transparent; }
+.atm-btn-secondary:hover { background: #fff; color: var(--blue-dark); }
 
 /* HERO */
+.atm-hero { position: relative; overflow: hidden; padding: 0 !important; background: linear-gradient(100deg, #e4f1fc 0%, #eef7fe 50%, #f8fcff 100%); }
+.atm-hero .container { max-width: 80rem; padding: 0; }
+.atm-hero-row { min-height: clamp(32rem, 66vh, 46rem); align-items: stretch !important; }
+.atm-hero-row > .col-md-6 { display: flex; }
+.atm-hero-content { width: 100%; display: flex; flex-direction: column; justify-content: center; padding: 56px 32px 56px 40px; }
+.atm-kicker { margin: 0 0 16px; max-width: 42ch; color: var(--blue); font-size: 0.92rem; font-weight: 600; line-height: 1.4; }
+.atm-hero h1 { margin: 0; max-width: none; font-size: clamp(3rem, 5.4vw, 5.4rem); font-weight: 800; line-height: 1; letter-spacing: -0.035em; }
+.atm-hero h1 span { display: block; color: var(--sky); }
+.atm-hero-copy { max-width: 48ch; margin: 22px 0 28px; font-size: 1.08rem; }
+.atm-hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 32px; }
+.atm-benefits { display: flex; flex-wrap: wrap; gap: 14px 28px; }
+.atm-benefit { display: flex; align-items: center; gap: 10px; }
+.atm-benefit span { width: 38px; height: 38px; flex: 0 0 38px; display: grid; place-items: center; border-radius: 50%; background: #fff; border: 1px solid #b9dcf5; color: var(--blue); font-size: 1.2rem; }
+.atm-benefit p { margin: 0; font-size: 0.85rem; font-weight: 600; color: var(--ink); line-height: 1.2; }
+.atm-hero-image { position: absolute; top: 0; right: 0; bottom: 0; width: 62vw; overflow: hidden; }
+.atm-hero-image img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; transform: scale(1.12); transform-origin: 50% 100%; -webkit-mask-image: linear-gradient(90deg, transparent 0, transparent 4%, rgba(0,0,0,.08) 14%, rgba(0,0,0,.25) 26%, rgba(0,0,0,.55) 40%, rgba(0,0,0,.85) 54%, #000 68%); mask-image: linear-gradient(90deg, transparent 0, transparent 4%, rgba(0,0,0,.08) 14%, rgba(0,0,0,.25) 26%, rgba(0,0,0,.55) 40%, rgba(0,0,0,.85) 54%, #000 68%); }
 
-.atm-hero {
-    background:
-        linear-gradient(
-            90deg,
-            #eef8ff 0%,
-            #f8fcff 100%
-        );
+/* SÍNTOMAS */
+.sintomas-atm-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(135px, 1fr)); gap: 32px 18px; }
+.sintoma-atm-card { text-align: center; }
+.sintoma-icono { width: 78px; height: 78px; margin: 0 auto 14px; display: grid; place-items: center; border-radius: 50%; background: var(--tint); border: 1px solid var(--line); color: var(--blue); }
+.sintoma-icono i { font-size: 2rem; line-height: 1; }
+.sintoma-atm-card h3 { font-size: 0.95rem; margin-bottom: 4px; }
+.sintoma-atm-card p { margin: 0; font-size: 0.82rem; color: #5f7388; line-height: 1.4; }
+
+/* BLOQUES DE TEXTO SUELTOS */
+main > section:not([class]) { width: calc(100% - 48px); max-width: calc(var(--page) - 48px); margin: 0 auto 8px; padding: 32px 40px; background: var(--tint-2); border-left: 4px solid var(--sky); border-radius: 0 18px 18px 0; }
+main > section:not([class]) h2 { font-size: 1.4rem; margin-bottom: 8px; }
+main > section:not([class]) p { margin: 0; max-width: 78ch; }
+
+/* QUÉ ES */
+.explicacion-atm { padding-top: 56px !important; }
+.explicacion-atm-grid { display: grid; grid-template-columns: 1.3fr 1fr; gap: 28px; }
+.explicacion-atm-texto, .explicacion-bruxismo { padding: 40px; border-radius: 26px; }
+.explicacion-atm-texto { background: var(--tint); }
+.explicacion-bruxismo { background: #fff; border: 1.5px solid var(--line); }
+.explicacion-atm-texto p:last-child, .explicacion-bruxismo p:last-child { margin: 0; }
+
+/* ABORDAJE */
+.abordaje-atm { background: var(--tint-2); }
+.abordaje-atm-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.abordaje-atm-card { padding: 28px; background: #fff; border: 1px solid var(--line); border-radius: 18px; }
+.abordaje-atm-card > i { width: 50px; height: 50px; margin-bottom: 18px; display: grid; place-items: center; border-radius: 14px; background: var(--tint); color: var(--blue); font-size: 1.5rem; }
+.abordaje-atm-card p { margin: 0; font-size: 0.93rem; }
+
+/* PROCESO */
+.proceso-atm-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; counter-reset: paso; }
+.proceso-atm-item { position: relative; }
+.proceso-numero { width: 46px; height: 46px; margin-bottom: 18px; display: grid; place-items: center; border-radius: 50%; background: var(--blue); color: #fff; font-weight: 800; font-size: 1.15rem; position: relative; z-index: 1; }
+.proceso-atm-item:not(:last-child)::after { content: ""; position: absolute; top: 22px; left: 58px; right: -20px; border-top: 2px dashed #a9d0ee; }
+.proceso-atm-item p { margin: 0; font-size: 0.93rem; }
+
+/* FAQ */
+.faq-atm { background: var(--tint-2); }
+.faq-atm-item { border-bottom: 1px solid var(--line); }
+.faq-atm-item summary { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 22px 0; list-style: none; cursor: pointer; font-weight: 700; color: var(--ink); font-size: 1.05rem; }
+.faq-atm-item summary::-webkit-details-marker { display: none; }
+.faq-atm-item summary::after { content: "+"; flex: 0 0 32px; height: 32px; display: grid; place-items: center; border-radius: 50%; background: var(--tint); color: var(--blue); font-size: 1.4rem; font-weight: 500; transition: transform 0.25s; }
+.faq-atm-item[open] summary::after { transform: rotate(45deg); }
+.faq-atm-item p { padding: 0 52px 22px 0; margin: 0; }
+
+/* CTA */
+.cta-atm { background: linear-gradient(135deg, rgba(18,49,90,.94) 0%, rgba(26,90,156,.86) 100%), url("../media/atm-cta.jpg") center / cover no-repeat, #12315a; color: #d3e6f7; text-align: center; padding: 88px 0 !important; }
+.cta-atm h2 { max-width: 30ch; margin: 0 auto 18px; color: #fff; font-size: clamp(1.6rem, 3.4vw, 2.4rem); }
+.cta-atm p { max-width: 58ch; margin: 0 auto 32px; }
+.cta-atm .atm-btn-primary { background: #fff; border-color: #fff; color: var(--ink); box-shadow: none; }
+.cta-atm .atm-btn-primary:hover { background: var(--tint); color: var(--ink); }
+
+/* RESPONSIVE */
+@media (max-width: 991px) {
+  .atm-header .navbar-nav { gap: 4px; align-items: flex-start; padding: 12px 0; }
+  .atm-header .nav-link.active::after { display: none; }
+  .atm-nav-btn { display: inline-block; margin-top: 8px; }
+  .abordaje-atm-grid { grid-template-columns: repeat(2, 1fr); }
+  .proceso-atm-grid { grid-template-columns: repeat(2, 1fr); }
+  .proceso-atm-item::after { display: none; }
+  .explicacion-atm-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 767px) {
+  main > section { padding: 56px 0; }
+  .atm-hero-row > .col-md-6 { display: block; }
+  .atm-hero-content { padding: 40px 24px 32px; }
+  .atm-hero-image { position: relative; width: 100%; height: 300px; }
+  .atm-hero-image img { -webkit-mask-image: none; mask-image: none; }
+  .atm-hero-actions { flex-direction: column; }
+  .abordaje-atm-grid, .proceso-atm-grid { grid-template-columns: 1fr; }
+  .explicacion-atm-texto, .explicacion-bruxismo { padding: 28px; }
+  main > section:not([class]) { padding: 24px; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+
+/* HERO: frase manuscrita sobre la foto */
+.atm-hero-script { position: absolute; top: 18%; left: 34%; margin: 0; font-family: "Caveat", cursive; font-size: clamp(1.4rem, 2.2vw, 2rem); line-height: 1.15; color: #2a6fb0; transform: rotate(-7deg); text-shadow: 0 1px 8px rgba(255,255,255,.8); }
+
+/* IMÁGENES */
+.atm-figura { margin: 28px 0 0; }
+.atm-figura img { display: block; width: 100%; height: 100%; min-height: 240px; max-height: 360px; object-fit: contain; background: #fff; border-radius: 18px; box-shadow: 0 14px 30px rgba(18,49,90,.14); }
+.atm-banner { position: relative; margin: 0 0 28px; border-radius: 26px; overflow: hidden; box-shadow: 0 18px 40px rgba(18,49,90,.16); }
+.atm-banner img { display: block; width: 100%; height: clamp(15rem, 30vw, 24rem); object-fit: cover; object-position: center 30%; }
+.atm-banner figcaption { position: absolute; left: 0; right: 0; bottom: 0; padding: 56px 32px 24px; color: #fff; font-weight: 600; font-size: 1.05rem; background: linear-gradient(0deg, rgba(18,49,90,.85), transparent); }
+
+/* DATOS DE LA CONSULTA */
+.proceso-info { display: flex; flex-wrap: wrap; gap: 16px 40px; margin-top: 44px; padding: 26px 32px; background: var(--tint); border-radius: 20px; }
+.proceso-info p { display: flex; align-items: center; gap: 12px; margin: 0; font-size: 0.95rem; }
+.proceso-info i { width: 42px; height: 42px; display: grid; place-items: center; border-radius: 50%; background: #fff; color: var(--blue); font-size: 1.15rem; }
+
+@media (max-width: 767px) {
+  .atm-hero-script { top: auto; bottom: 16px; left: 20px; transform: none; font-size: 1.3rem; }
+  .atm-banner img { height: 240px; }
 }
 
-.atm-hero .container {
-    max-width: 1240px;
+/* MENÚ CON SOMBRA AL BAJAR */
+.atm-header { transition: box-shadow 0.25s; }
+.atm-header.scrolled { box-shadow: 0 6px 22px rgba(18, 49, 90, 0.1); }
+
+/* BOTÓN FLOTANTE DE WHATSAPP */
+.wa-flotante { position: fixed; right: 20px; bottom: 20px; z-index: 60; display: inline-flex; align-items: center; gap: 10px; padding: 14px 22px; border-radius: 999px; background: #1fa855; color: #fff; font-weight: 700; font-size: 0.95rem; text-decoration: none; box-shadow: 0 10px 26px rgba(18, 49, 90, 0.28); opacity: 0; visibility: hidden; transform: translateY(16px); transition: opacity 0.3s, transform 0.3s, visibility 0.3s; }
+.wa-flotante i { font-size: 1.4rem; line-height: 1; }
+.wa-flotante.visible { opacity: 1; visibility: visible; transform: none; }
+.wa-flotante:hover { background: #188a46; color: #fff; }
+@media (max-width: 575px) { .wa-flotante { right: 14px; bottom: 14px; padding: 15px; } .wa-flotante span { display: none; } }
+
+/* ===== AJUSTES DE PANTALLA: aprovechar el espacio en cada dispositivo ===== */
+@media (min-width: 1500px) { html { font-size: 112.5%; } }
+@media (min-width: 1800px) { html { font-size: 118.75%; } }
+h1, h2 { text-wrap: balance; }
+p { text-wrap: pretty; }
+
+.atm-kicker { display: inline-flex; align-items: center; gap: 8px; align-self: flex-start; padding: 8px 16px; border-radius: 999px; background: #fff; border: 1px solid #c7e1f6; font-size: 0.85rem; }
+.atm-hero-copy { font-size: 1.15rem; line-height: 1.7; }
+.atm-hero-copy strong { color: var(--ink); font-weight: 700; }
+.atm-benefits { display: grid; grid-template-columns: repeat(3, auto); justify-content: start; gap: 0; padding: 14px 6px; width: fit-content; max-width: 100%; background: rgba(255, 255, 255, 0.75); border: 1px solid #cfe5f6; border-radius: 18px; }
+.atm-benefit { padding: 0 20px; }
+.atm-benefit + .atm-benefit { border-left: 1px solid #cfe5f6; }
+
+.explicacion-atm-grid { align-items: stretch; }
+.atm-nota { display: flex; gap: 14px; align-items: flex-start; margin-top: 24px; padding: 18px 20px; border-radius: 16px; background: var(--tint); color: var(--ink); }
+.atm-nota i { color: var(--blue); font-size: 1.4rem; line-height: 1.2; }
+.atm-nota p { margin: 0; font-weight: 600; }
+@media (min-width: 992px) {
+  .explicacion-atm-texto:has(.atm-figura) { display: grid; grid-template-columns: 1.05fr 1fr; column-gap: 36px; align-content: start; }
+  .explicacion-atm-texto:has(.atm-figura) > :not(.atm-figura) { grid-column: 1; }
+  .explicacion-atm-texto:has(.atm-figura) .atm-figura { grid-column: 2; grid-row: 1 / span 3; margin: 0; align-self: stretch; }
+  .explicacion-atm-texto:has(.atm-figura) .atm-figura img { height: 100%; max-height: none; }
 }
 
-.atm-hero-row {
-    min-height: 430px;
+.proceso-info { align-items: center; }
+.proceso-info .atm-btn-primary { margin-left: auto; }
+
+@media (min-width: 992px) {
+  .faq-atm .container { display: grid; grid-template-columns: 0.8fr 1.7fr; column-gap: 72px; align-items: start; }
+  .faq-atm .container > h2 { grid-column: 1; grid-row: 1 / span 8; position: sticky; top: 90px; font-size: clamp(1.8rem, 2.6vw, 2.5rem); }
+  .faq-atm .container > .faq-atm-item { grid-column: 2; }
+  .faq-atm .container > .faq-atm-item:first-of-type { border-top: 1px solid var(--line); }
 }
 
-.atm-hero-content {
-    padding: 46px 42px 34px 12px;
+@media (max-width: 991px) {
+  .atm-hero-content { padding: 44px 32px 36px; }
+  .atm-hero-copy { max-width: 56ch; }
+  .atm-hero-script { font-size: 1.5rem; }
+}
+@media (max-width: 767px) {
+  .atm-benefits { grid-template-columns: 1fr; width: 100%; padding: 10px 14px; gap: 8px; }
+  .atm-benefit { padding: 0; }
+  .atm-benefit + .atm-benefit { border-left: 0; }
+  .proceso-info .atm-btn-primary { margin-left: 0; width: 100%; }
+  .proceso-info { padding: 22px; }
 }
 
-.atm-kicker {
-    margin: 0 0 12px;
-    color: var(--atm-primary);
-    font-size: 0.74rem;
-    font-weight: 700;
-    letter-spacing: 1.45px;
-}
+/* ===== HERO: texto sobre la foto, ubicación discreta ===== */
+.atm-hero-row > .col-md-6:first-child { position: relative; z-index: 2; }
+.atm-hero-script { left: 38%; z-index: 2; }
+.atm-ubicacion { display: flex; align-items: center; gap: 7px; margin: 16px 0 0; font-size: 0.85rem; color: #5f7388; }
+.atm-ubicacion i { color: var(--sky); }
+@media (min-width: 768px) and (max-width: 991px) { .atm-hero-image { width: 58vw; } }
 
-.atm-hero h1 {
-    margin: 0;
-    max-width: 540px;
-    font-size: clamp(3rem, 4.5vw, 4.5rem);
-    line-height: 0.98;
-    letter-spacing: -2px;
-    font-weight: 800;
-    color: var(--atm-primary-dark);
-}
+/* ===== ANATOMÍA: foto de cerca, sin bordes blancos ===== */
+.atm-figura { overflow: hidden; border-radius: 18px; box-shadow: 0 14px 30px rgba(18, 49, 90, 0.14); background: #fff; }
+.atm-figura img { border-radius: 0; box-shadow: none; object-fit: cover; object-position: 48% 55%; transform: scale(1.12); transform-origin: 48% 58%; min-height: 280px; max-height: none; }
+@media (max-width: 991px) { .atm-figura img { aspect-ratio: 4 / 3; height: auto; min-height: 0; } }
 
-.atm-hero h1 span {
-    display: block;
-    color: var(--atm-primary);
-}
+/* Panel de bruxismo: la nota queda abajo, sin hueco */
+.explicacion-bruxismo { display: flex; flex-direction: column; }
+.explicacion-bruxismo > p:last-of-type { margin-bottom: 24px; }
+.atm-nota { margin-top: auto; }
 
-.atm-hero-copy {
-    max-width: 530px;
-    margin: 18px 0 22px;
-    color: var(--atm-text);
-    font-size: 1rem;
-    line-height: 1.6;
-}
-
-.atm-hero-actions {
-    display: flex;
-    gap: 12px;
-    flex-wrap: wrap;
-    margin-bottom: 22px;
-}
-
-.atm-btn-primary,
-.atm-btn-secondary {
-    border-radius: 999px;
-    padding: 11px 20px;
-    font-size: 0.88rem;
-    font-weight: 700;
-}
-
-.atm-btn-primary {
-    background: var(--atm-primary);
-    color: white;
-}
-
-.atm-btn-primary:hover {
-    background: #2784ca;
-    color: white;
-}
-
-.atm-btn-secondary {
-    border: 1.5px solid var(--atm-primary);
-    color: var(--atm-primary);
-    background: rgba(255, 255, 255, 0.70);
-}
-
-.atm-btn-secondary:hover {
-    background: #ffffff;
-    color: #2784ca;
-}
+/* Diferenciales integrados al fondo del hero */
 
 .atm-benefits {
     display: flex;
-    gap: 24px;
+    align-items: center;
+    gap: 30px;
     flex-wrap: wrap;
+    margin-top: 18px;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
 }
 
 .atm-benefit {
     display: flex;
     align-items: center;
     gap: 8px;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
 }
 
 .atm-benefit span {
-    width: 34px;
-    height: 34px;
-    border-radius: 50%;
-    border: 1px solid #9fd3f4;
-    background: rgba(255, 255, 255, 0.85);
-    color: var(--atm-primary);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 800;
-}
-
-.atm-benefit p {
-    margin: 0;
-    max-width: 110px;
-    font-size: 0.76rem;
-    line-height: 1.2;
-    color: #38546d;
-}
-
-
-/* HERO IMAGE */
-
-.atm-hero-image {
-    width: 100%;
-    height: 430px;
-    overflow: hidden;
-}
-
-.atm-hero-image img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
-    object-position: center;
-}
-
-
-/* RESPONSIVE */
-
-@media (max-width: 991px) {
-
-    .atm-hero-content {
-        padding: 40px 20px 30px;
-    }
-
-    .atm-hero h1 {
-        font-size: 3rem;
-    }
-
-    .atm-hero-image {
-        height: 340px;
-    }
-
-    .atm-header .nav-link {
-        margin: 0;
-        padding: 10px 0;
-    }
-
-    .atm-header .nav-link.active::after {
-        display: none;
-    }
-
-    .atm-nav-btn {
-        margin-top: 12px;
-    }
-}
-
-@media (max-width: 576px) {
-
-    .atm-hero h1 {
-        font-size: 2.45rem;
-    }
-
-    .atm-hero-actions {
-        flex-direction: column;
-    }
-
-    .atm-btn-primary,
-    .atm-btn-secondary {
-        width: 100%;
-    }
-
-    .atm-benefits {
-        flex-direction: column;
-        gap: 12px;
-    }
-
-    .atm-hero-image {
-        height: 250px;
-    }
-}
-
-/* =========================================
-   HERO + HEADER ATM - DISEÑO DEFINITIVO
-========================================= */
-
-/* HEADER */
-
-.atm-header {
-    background: #ffffff;
-    border-bottom: 1px solid rgba(22, 59, 105, 0.06);
-}
-
-.atm-header .navbar {
-    min-height: 66px;
-    padding: 0;
-}
-
-.atm-header .container {
-    max-width: 1180px;
-    padding-left: 24px;
-    padding-right: 24px;
-}
-
-.atm-brand {
-    color: #163b69;
-    font-size: 1.05rem;
-    font-weight: 700;
-    white-space: nowrap;
-}
-
-.atm-header .navbar-collapse {
-    align-items: center;
-}
-
-.atm-header .navbar-nav {
-    align-items: center;
-    gap: 24px;
-}
-
-.atm-header .nav-link {
-    margin: 0;
-    padding: 22px 0 18px;
-    color: #38546d;
-    font-size: 0.84rem;
-    white-space: nowrap;
-}
-
-.atm-header .nav-link.active,
-.atm-header .nav-link:hover {
-    color: #2f93df;
-}
-
-.atm-header .nav-link.active::after {
-    bottom: 12px;
-}
-
-.atm-nav-btn {
-    margin-left: 25px;
-    padding: 10px 18px;
-    border-radius: 999px;
-    font-size: 0.82rem;
-    line-height: 1;
-    white-space: nowrap;
-}
-
-
-/* HERO */
-
-.atm-hero {
-    overflow: hidden;
-
-    background:
-        linear-gradient(
-            90deg,
-            #eef8ff 0%,
-            #eef8ff 45%,
-            #f4fbff 58%,
-            #ffffff 100%
-        );
-}
-
-.atm-hero .container {
-    max-width: 1240px;
-    padding-left: 0;
-    padding-right: 0;
-}
-
-.atm-hero-row {
-    min-height: 380px;
-    align-items: stretch !important;
-}
-
-.atm-hero-row > .col-md-6 {
-    display: flex;
-}
-
-.atm-hero-content {
-    width: 100%;
-    padding: 34px 28px 26px 42px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.atm-kicker {
-    max-width: 500px;
-    margin: 0 0 10px;
-
-    color: #2f93df;
-    font-size: 0.68rem;
-    line-height: 1.35;
-    font-weight: 700;
-    letter-spacing: 1.4px;
-}
-
-.atm-hero h1 {
-    max-width: 520px;
-    margin: 0;
-
-    color: #163b69;
-
-    font-size: clamp(2.8rem, 4vw, 3.8rem);
-    line-height: 0.98;
-    font-weight: 800;
-    letter-spacing: -2px;
-}
-
-.atm-hero h1 span {
-    display: block;
-    color: #2f93df;
-}
-
-.atm-hero-copy {
-    max-width: 500px;
-    margin: 14px 0 17px;
-
-    color: #405b76;
-    font-size: 0.94rem;
-    line-height: 1.5;
-}
-
-
-/* BOTONES */
-
-.atm-hero-actions {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    flex-wrap: wrap;
-    margin-bottom: 17px;
-}
-
-.atm-btn-primary,
-.atm-btn-secondary {
-    min-height: 42px;
-    padding: 9px 18px;
-
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-
-    border-radius: 999px;
-
-    font-size: 0.82rem;
-    font-weight: 700;
-}
-
-
-/* BENEFICIOS */
-
-.atm-benefits {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    justify-content: start;
-    gap: 22px;
-}
-
-.atm-benefit {
-    display: flex;
-    align-items: center;
-    gap: 7px;
-}
-
-.atm-benefit span {
-    width: 34px;
-    height: 34px;
-    flex: 0 0 34px;
-}
-
-.atm-benefit p {
-    max-width: 105px;
-    margin: 0;
-
-    font-size: 0.69rem;
-    line-height: 1.15;
-}
-
-
-/* FOTO FUNDIDA */
-
-.atm-hero-image {
-    position: relative;
-
-    width: 100%;
-    height: 100%;
-    min-height: 380px;
-
-    overflow: hidden;
-}
-
-.atm-hero-image img {
-    width: 100%;
-    height: 100%;
-
-    display: block;
-
-    object-fit: cover;
-    object-position: center;
-}
-
-.atm-hero-image::before {
-    content: "";
-
-    position: absolute;
-    z-index: 2;
-
-    top: 0;
-    bottom: 0;
-    left: 0;
-
-    width: 28%;
-
-    background:
-        linear-gradient(
-            90deg,
-            #eef8ff 0%,
-            rgba(238, 248, 255, 0.88) 22%,
-            rgba(238, 248, 255, 0.42) 58%,
-            rgba(238, 248, 255, 0) 100%
-        );
-
-    pointer-events: none;
-}
-
-
-/* TABLET */
-
-@media (max-width: 900px) {
-
-    .atm-header .navbar-nav {
-        gap: 15px;
-    }
-
-    .atm-header .nav-link {
-        font-size: 0.78rem;
-    }
-
-    .atm-nav-btn {
-        margin-left: 15px;
-        padding: 9px 14px;
-    }
-
-    .atm-hero-content {
-        padding: 30px 22px;
-    }
-
-    .atm-benefits {
-        gap: 12px;
-    }
-}
-
-
-/* CELULAR */
-
-@media (max-width: 767px) {
-
-    .atm-hero-row > .col-md-6 {
-        display: block;
-    }
-
-    .atm-hero-content {
-        padding: 32px 20px 26px;
-    }
-
-    .atm-hero h1 {
-        font-size: 2.5rem;
-    }
-
-    .atm-benefits {
-        grid-template-columns: 1fr;
-        gap: 10px;
-    }
-
-    .atm-hero-image {
-        min-height: 280px;
-    }
-
-    .atm-hero-image::before {
-        display: none;
-    }
-}
-/* =========================================
-   SÍNTOMAS ATM
-========================================= */
-
-.sintomas-atm {
-    padding: 70px 20px;
-    background: #ffffff;
-}
-
-.sintomas-atm .container {
-    max-width: 1180px;
-    margin: 0 auto;
-}
-
-.sintomas-atm .seccion-etiqueta {
-    margin-bottom: 8px;
-    color: #2f93df;
-    font-size: 0.78rem;
-    font-weight: 700;
-    letter-spacing: 1.4px;
-}
-
-.sintomas-atm h2 {
-    margin-bottom: 12px;
-    color: #163b69;
-    font-size: 2.2rem;
-    font-weight: 800;
-}
-
-.sintomas-atm .seccion-intro {
-    max-width: 760px;
-    margin-bottom: 32px;
-    color: #536678;
-    font-size: 1rem;
-    line-height: 1.65;
-}
-
-.sintomas-atm-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 16px;
-}
-
-.sintoma-atm-card {
-    height: 100%;
-    padding: 22px 18px;
-    text-align: center;
-
-    background: #f8fcff;
-    border: 1px solid #d9edf9;
-    border-radius: 18px;
-
-    transition:
-        transform 0.2s ease,
-        box-shadow 0.2s ease;
-}
-
-.sintoma-atm-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 28px rgba(22, 59, 105, 0.08);
-}
-
-.sintoma-icono {
-    width: 52px;
-    height: 52px;
-    margin: 0 auto 14px;
+    width: 30px;
+    height: 30px;
+    flex: 0 0 30px;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
     border-radius: 50%;
-    background: #e8f6ff;
+    background: transparent !important;
+    border: 1px solid rgba(47, 147, 223, 0.35) !important;
     color: #2f93df;
-
-    font-size: 1.45rem;
-}
-
-.sintoma-atm-card h3 {
-    margin-bottom: 8px;
-    color: #163b69;
-    font-size: 1rem;
-    font-weight: 700;
-}
-
-.sintoma-atm-card p {
-    margin: 0;
-    color: #5b6f82;
-    font-size: 0.88rem;
-    line-height: 1.5;
-}
-
-@media (max-width: 900px) {
-    .sintomas-atm-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 576px) {
-    .sintomas-atm {
-        padding: 50px 18px;
-    }
-
-    .sintomas-atm h2 {
-        font-size: 1.8rem;
-    }
-
-    .sintomas-atm-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* =========================================
-   AJUSTE HERO: IMAGEN + BENEFICIOS
-========================================= */
-
-.atm-hero-row {
-    min-height: 390px;
-}
-
-.atm-hero-content {
-    padding: 34px 28px 28px 28px;
-}
-
-.atm-hero-image {
-    height: 390px;
-    width: 100%;
-}
-
-.atm-hero-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-}
-
-.atm-benefits {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    flex-wrap: nowrap;
-}
-
-.atm-benefit {
-    min-width: 0;
 }
 
 .atm-benefit p {
-    max-width: 110px;
-    font-size: 0.72rem;
-    line-height: 1.15;
-}
-
-@media (max-width: 900px) {
-    .atm-benefits {
-        flex-wrap: wrap;
-    }
-}
-
-/* =========================================
-   CORRECCIÓN REAL DEL HERO ATM
-========================================= */
-
-.atm-hero .atm-hero-row {
-    align-items: stretch !important;
-}
-
-.atm-hero .atm-hero-row > .col-md-6 {
-    display: flex;
-}
-
-.atm-hero .atm-hero-content {
-    width: 100%;
-    padding: 30px 28px 24px !important;
-}
-
-.atm-hero .atm-hero-image {
-    width: 100%;
-    height: 100% !important;
-    min-height: 390px;
-}
-
-.atm-hero .atm-hero-image img {
-    width: 100%;
-    height: 100% !important;
-    min-height: 390px;
-    object-fit: cover;
-    object-position: center;
-}
-
-
-/* BENEFICIOS EN UNA SOLA FILA */
-
-.atm-hero .atm-benefits {
-    display: grid !important;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 12px;
-    width: 100%;
-}
-
-.atm-hero .atm-benefit {
-    display: flex;
-    align-items: center;
-    gap: 7px;
-    min-width: 0;
-}
-
-.atm-hero .atm-benefit p {
     margin: 0;
     max-width: none;
-    font-size: 0.69rem;
-    line-height: 1.15;
+
+    font-size: 0.76rem;
+    line-height: 1.2;
+    font-weight: 600;
+
+    color: #4a5f73;
 }
-
-
-/* REDUCIR ALTURA GENERAL */
-
-.atm-hero h1 {
-    font-size: clamp(2.8rem, 4vw, 3.8rem) !important;
-}
-
-.atm-hero-copy {
-    margin-top: 12px !important;
-    margin-bottom: 16px !important;
-}
-
-.atm-hero-actions {
-    margin-bottom: 16px !important;
-}
-
-@media (max-width: 767px) {
-
-    .atm-hero .atm-hero-row > .col-md-6 {
-        display: block;
-    }
-
-    .atm-hero .atm-benefits {
-        grid-template-columns: 1fr;
-    }
-
-    .atm-hero .atm-hero-image {
-        min-height: 280px;
-    }
-
-    .atm-hero .atm-hero-image img {
-        min-height: 280px;
-    }
-}
-
-/* =========================================
-   SÍNTOMAS ATM - DISEÑO VISUAL
-========================================= */
-
-.sintomas-atm {
-    padding: 52px 20px 58px;
-    background: #ffffff;
-}
-
-.sintomas-atm .container {
-    max-width: 1180px;
-    margin: 0 auto;
-}
-
-.sintomas-atm .seccion-etiqueta {
-    margin: 0 0 8px;
-    color: #2f93df;
-    font-size: 0.72rem;
-    font-weight: 700;
-    letter-spacing: 1.4px;
-}
-
-.sintomas-atm h2 {
-    margin: 0 0 10px;
-    color: #163b69;
-    font-size: 2rem;
-    font-weight: 800;
-}
-
-.sintomas-atm .seccion-intro {
-    max-width: 720px;
-    margin: 0 0 28px;
-    color: #536678;
-    font-size: 0.95rem;
-    line-height: 1.55;
-}
-
-.sintomas-atm-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 14px;
-}
-
-.sintoma-atm-card {
-    height: 100%;
-    padding: 20px 14px;
-
-    text-align: center;
-
-    background: #f8fcff;
-    border: 1px solid #d9edf9;
-    border-radius: 16px;
-
-    transition:
-        transform 0.2s ease,
-        box-shadow 0.2s ease;
-}
-
-.sintoma-atm-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 24px rgba(22, 59, 105, 0.07);
-}
-
-.sintoma-icono {
-    width: 50px;
-    height: 50px;
-
-    margin: 0 auto 12px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    border-radius: 50%;
-
-    background: #e8f6ff;
-    color: #2f93df;
-
-    font-size: 1.35rem;
-}
-
-.sintoma-atm-card h3 {
-    margin: 0 0 7px;
-
-    color: #163b69;
-
-    font-size: 0.95rem;
-    font-weight: 700;
-}
-
-.sintoma-atm-card p {
-    margin: 0;
-
-    color: #5b6f82;
-
-    font-size: 0.82rem;
-    line-height: 1.45;
-}
-
-@media (max-width: 900px) {
-    .sintomas-atm-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 576px) {
-    .sintomas-atm {
-        padding: 42px 18px;
-    }
-
-    .sintomas-atm h2 {
-        font-size: 1.65rem;
-    }
-
-    .sintomas-atm-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-.sintoma-icono {
-    width: 74px;
-    height: 74px;
-    margin: 0 auto 14px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    background: #eaf6ff;
-    color: #2f93df;
-    border: 1px solid #d7ebfb;
-}
-
-.sintoma-icono i {
-    font-size: 2rem;
-    line-height: 1;
-}
-
-
-
-
